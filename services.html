@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | VERMILLION</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vermillion: '#E34234',
+                        dark: '#0a0a0a',
+                        card: '#111111'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">VERMILLION</a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
+                        <a href="services.html"
+                            class="text-white hover:text-vermillion px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
+                        <a href="portfolio.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Work</a>
+                        <a href="contact.html"
+                            class="bg-white text-black hover:bg-gray-200 px-5 py-2 rounded-full text-sm font-medium transition-all duration-300">Book
+                            a Call</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button"
+                        class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-black/95 backdrop-blur-xl absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-b border-white/10">
+                <a href="index.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="services.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="portfolio.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work</a>
+                <a href="contact.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-40 pb-20 px-4 sm:px-6 lg:px-8 text-center max-w-7xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-on-scroll">Our Services</h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto animate-on-scroll delay-100">
+            We specialize in creating high-performance video assets that convert.
+        </p>
+    </header>
+
+    <!-- Services List -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
+        <div class="grid gap-20">
+            <!-- Service 1 -->
+            <div class="group grid md:grid-cols-2 gap-12 items-center animate-on-scroll">
+                <div>
+                    <div
+                        class="h-16 w-16 bg-vermillion/20 rounded-2xl flex items-center justify-center mb-6 text-vermillion">
+                        <span class="text-2xl font-bold">01</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">UGC Video Ads</h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        User-Generated Content (UGC) is the gold standard for trust. We source authentic creators who
+                        match your brand persona to deliver natural, relatable content that drives sales.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500 mb-8">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-vermillion rounded-full"></span><span>Creator Sourcing &
+                                Vetting</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-vermillion rounded-full"></span><span>Briefing & Management</span>
+                        </li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-vermillion rounded-full"></span><span>Native-style Editing</span>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-card rounded-3xl p-8 border border-white/5 h-80 flex items-center justify-center relative overflow-hidden group-hover:border-white/20 transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-br from-vermillion/10 to-transparent opacity-50"></div>
+                    <span class="text-6xl">📱</span>
+                </div>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="group grid md:grid-cols-2 gap-12 items-center animate-on-scroll">
+                <div class="md:order-2">
+                    <div
+                        class="h-16 w-16 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 text-blue-400">
+                        <span class="text-2xl font-bold">02</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">Script Writing</h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Video is only as good as its hook. Our copywriters specialize in direct-response scripts
+                        designed to capture attention in the first 3 seconds and hold it until the CTA.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500 mb-8">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span><span>Competitor Analysis</span>
+                        </li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span><span>Hook Development</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-blue-400 rounded-full"></span><span>CTA Optimization</span></li>
+                    </ul>
+                </div>
+                <div
+                    class="md:order-1 bg-card rounded-3xl p-8 border border-white/5 h-80 flex items-center justify-center relative overflow-hidden group-hover:border-white/20 transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-500/10 to-transparent opacity-50"></div>
+                    <span class="text-6xl">✍️</span>
+                </div>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="group grid md:grid-cols-2 gap-12 items-center animate-on-scroll">
+                <div>
+                    <div
+                        class="h-16 w-16 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 text-purple-400">
+                        <span class="text-2xl font-bold">03</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">Meta Ads Services</h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        We don't just make ads; we understand how they run. Our creative strategy is informed by deep
+                        knowledge of the Meta ad ecosystem, ensuring your creative is built to scale.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500 mb-8">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span><span>Creative Testing
+                                Framework</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span><span>Audience Analysis</span>
+                        </li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-purple-400 rounded-full"></span><span>Performance Reporting</span>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="bg-card rounded-3xl p-8 border border-white/5 h-80 flex items-center justify-center relative overflow-hidden group-hover:border-white/20 transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-50"></div>
+                    <span class="text-6xl">📊</span>
+                </div>
+            </div>
+            <!-- Service 4 -->
+            <div class="group grid md:grid-cols-2 gap-12 items-center animate-on-scroll">
+                <div class="md:order-2">
+                    <div
+                        class="h-16 w-16 bg-pink-500/20 rounded-2xl flex items-center justify-center mb-6 text-pink-400">
+                        <span class="text-2xl font-bold">04</span>
+                    </div>
+                    <h2 class="text-3xl font-bold mb-4">AI Video Ads</h2>
+                    <p class="text-gray-400 leading-relaxed mb-6">
+                        Leverage the power of AI to create high-quality video content at a fraction of the cost and
+                        time. Perfect for testing new angles and rapid iteration.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-500 mb-8">
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span><span>AI Avatars</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span><span>Voice Synthesis</span></li>
+                        <li class="flex items-center space-x-2"><span
+                                class="w-1.5 h-1.5 bg-pink-400 rounded-full"></span><span>Automated Editing</span></li>
+                    </ul>
+                </div>
+                <div
+                    class="md:order-1 bg-card rounded-3xl p-8 border border-white/5 h-80 flex items-center justify-center relative overflow-hidden group-hover:border-white/20 transition-all">
+                    <div class="absolute inset-0 bg-gradient-to-br from-pink-500/10 to-transparent opacity-50"></div>
+                    <span class="text-6xl">🤖</span>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#050505] border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left text-sm text-gray-600">
+            &copy; 2026 Vermillion. All rights reserved.
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

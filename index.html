@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERMILLION | High-Converting Video Ads</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vermillion: '#E34234',
+                        dark: '#0a0a0a',
+                        card: '#111111'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">VERMILLION</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-white hover:text-vermillion px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
+                        <a href="services.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
+                        <a href="portfolio.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Work</a>
+                        <a href="contact.html"
+                            class="bg-white text-black hover:bg-gray-200 px-5 py-2 rounded-full text-sm font-medium transition-all duration-300">Book
+                            a Call</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button"
+                        class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden bg-black/95 backdrop-blur-xl absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-b border-white/10">
+                <a href="index.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="services.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="portfolio.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work</a>
+                <a href="contact.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden hero-gradient">
+        <!-- Abstract Background Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div
+                class="absolute -top-1/2 -left-1/4 w-[1000px] h-[1000px] bg-vermillion/10 rounded-full blur-3xl opacity-30 animate-pulse">
+            </div>
+            <div
+                class="absolute -bottom-1/2 -right-1/4 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-3xl opacity-20">
+            </div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 animate-on-scroll">
+                We Create <br />
+                <span class="text-gradient">High-Converting Video Ads</span>
+            </h1>
+            <p
+                class="mt-4 text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-10 animate-on-scroll delay-100 font-light">
+                UGC, AI, and Real Human Video Ads that drive performance for modern brands.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-on-scroll delay-200">
+                <a href="portfolio.html"
+                    class="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/20 text-white rounded-full font-medium hover:bg-white/5 transition-all duration-300 backdrop-blur-sm">
+                    View Our Work
+                </a>
+                <a href="contact.html"
+                    class="w-full sm:w-auto px-8 py-4 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
+                    Book a Call
+                </a>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce opacity-50">
+            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
+                </path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-20 animate-on-scroll">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Expertise</h2>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Comprehensive video production services tailored for
+                    scale.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Card 1 -->
+                <div
+                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-100">
+                    <div
+                        class="h-12 w-12 bg-vermillion/20 rounded-2xl flex items-center justify-center mb-6 text-vermillion group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">UGC Video Ads</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Authentic, creator-led content that resonates with
+                        audiences and builds trust.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-200">
+                    <div
+                        class="h-12 w-12 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 text-blue-400 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Script Writing</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Data-backed hooks and storytelling designed to stop
+                        the scroll and convert.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-300">
+                    <div
+                        class="h-12 w-12 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 text-purple-400 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Meta Ads Services</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">End-to-end creative testing and scaling strategies
+                        for Facebook & Instagram.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-100">
+                    <div
+                        class="h-12 w-12 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 text-green-400 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Real Human Ads</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Professional actors and creators delivering your
+                        message with perfect delivery.</p>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-200">
+                    <div
+                        class="h-12 w-12 bg-pink-500/20 rounded-2xl flex items-center justify-center mb-6 text-pink-400 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">AI Video Ads</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Cutting-edge AI avatars and voiceovers for rapid
+                        testing and iteration.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-300">
+                    <div
+                        class="h-12 w-12 bg-yellow-500/20 rounded-2xl flex items-center justify-center mb-6 text-yellow-400 group-hover:scale-110 transition-transform">
+                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Pre-Production</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">Detailed planning, casting, and storyboarding
+                        ensures a smooth shoot.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof -->
+    <section class="py-24 border-y border-white/5 bg-[#050505]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 animate-on-scroll">
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">10k+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest">Videos Delivered</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">100+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest">Brands Served</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">5M+</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest">Ad Spend Managed</div>
+                </div>
+                <div>
+                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">3x</div>
+                    <div class="text-sm text-gray-500 uppercase tracking-widest">Average ROAS</div>
+                </div>
+            </div>
+
+            <p class="text-gray-500 mb-8 text-sm uppercase tracking-widest animate-on-scroll">Trusted by Industry
+                Leaders</p>
+            <div
+                class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 animate-on-scroll delay-100">
+                <!-- Placeholder Logos using Text/SVG for now -->
+                <div class="text-xl font-bold font-serif">Levi's</div>
+                <div class="text-xl font-bold">Unacademy</div>
+                <div class="text-xl font-bold tracking-widest">SEEKHO</div>
+                <div class="text-xl font-bold italic">ZingBus</div>
+                <div class="text-xl font-bold">Astrotalk</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-24 bg-black">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/2 animate-on-scroll">
+                    <h2 class="text-3xl md:text-5xl font-bold mb-6">Why Vermillion?</h2>
+                    <p class="text-gray-400 text-lg mb-8">We don't just upgrade your creatives; we upgrade your
+                        performance. Our data-driven approach ensures every frame adds value.</p>
+
+                    <ul class="space-y-4">
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-vermillion" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-300">Performance-first creatives</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-vermillion" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-300">Trend-based storytelling</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-vermillion" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-300">Data-backed scripting</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <svg class="w-5 h-5 text-vermillion" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-300">End-to-end video production</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/2 animate-on-scroll delay-200">
+                    <div
+                        class="relative bg-gradient-to-tr from-gray-900 to-gray-800 rounded-2xl p-6 aspect-video flex items-center justify-center border border-white/10 shadow-2xl">
+                        <!-- Abstract Visual representation -->
+                        <div class="text-center">
+                            <div class="text-6xl mb-4">📈</div>
+                            <div class="text-gray-400 font-mono text-sm">Growth Trajectory</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#050505] border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-1">
+                    <a href="index.html"
+                        class="text-2xl font-bold tracking-tighter text-white mb-4 block">VERMILLION</a>
+                    <p class="text-gray-500 text-sm">Driving growth through high-converting video creatives.</p>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Company</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-2 text-sm text-gray-500">
+                        <li><a href="services.html" class="hover:text-white transition-colors">UGC Ads</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">Meta Ads</a></li>
+                        <li><a href="services.html" class="hover:text-white transition-colors">AI Video</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><span
+                                class="sr-only">Twitter</span><svg class="w-5 h-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
+                            </svg></a>
+                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><span
+                                class="sr-only">Instagram</span><svg class="w-5 h-5" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.997 3.997 0 110-7.994 3.997 3.997 0 010 7.994zm5.338-3.205a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4z" />
+                            </svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-white/5 pt-8 text-center md:text-left text-sm text-gray-600">
+                &copy; 2026 Vermillion. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

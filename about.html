@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | VERMILLION</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vermillion: '#E34234',
+                        dark: '#0a0a0a',
+                        card: '#111111'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white antialiased">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">VERMILLION</a>
+                </div>
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
+                        <a href="services.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
+                        <a href="portfolio.html"
+                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Work</a>
+                        <a href="contact.html"
+                            class="bg-white text-black hover:bg-gray-200 px-5 py-2 rounded-full text-sm font-medium transition-all duration-300">Book
+                            a Call</a>
+                    </div>
+                </div>
+                <!-- Mobile Menu Button -->
+                <div class="-mr-2 flex md:hidden">
+                    <button id="mobile-menu-button" type="button"
+                        class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div class="hidden md:hidden bg-black/95 backdrop-blur-xl absolute w-full" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-b border-white/10">
+                <a href="index.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="services.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="portfolio.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work</a>
+                <a href="contact.html"
+                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="pt-40 pb-20 px-4 sm:px-6 lg:px-8 text-center max-w-7xl mx-auto">
+        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-on-scroll">Our Story</h1>
+    </header>
+
+    <!-- Content -->
+    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
+        <div class="space-y-12 animate-on-scroll delay-100">
+            <div>
+                <p class="text-xl md:text-2xl font-light leading-relaxed text-gray-300">
+                    We are a performance-driven creative studio helping brands grow with compelling video ads. Our focus
+                    is on <span class="text-white font-medium">authenticity</span>, <span
+                        class="text-white font-medium">creativity</span>, and <span
+                        class="text-white font-medium">measurable results</span>.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 pt-12">
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-vermillion">Mission</h2>
+                    <p class="text-gray-400 leading-relaxed">To democratize high-performing video creatives for modern
+                        brands, bridging the gap between raw authentic content and polished performance marketing.</p>
+                </div>
+                <div>
+                    <h2 class="text-2xl font-bold mb-4 text-blue-400">Vision</h2>
+                    <p class="text-gray-400 leading-relaxed">To be the global standard for data-driven storytelling,
+                        where every frame serves a purpose and every video drives growth.</p>
+                </div>
+            </div>
+
+            <!-- Team Placeholder -->
+            <div class="pt-20">
+                <h2 class="text-2xl font-bold mb-8 text-center">The Team</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <!-- Member 1 -->
+                    <div class="bg-white/5 rounded-2xl p-4 text-center">
+                        <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-3"></div>
+                        <div class="font-medium">Creative Lead</div>
+                    </div>
+                    <!-- Member 2 -->
+                    <div class="bg-white/5 rounded-2xl p-4 text-center">
+                        <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-3"></div>
+                        <div class="font-medium">Strategist</div>
+                    </div>
+                    <!-- Member 3 -->
+                    <div class="bg-white/5 rounded-2xl p-4 text-center">
+                        <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-3"></div>
+                        <div class="font-medium">Editor</div>
+                    </div>
+                    <!-- Member 4 -->
+                    <div class="bg-white/5 rounded-2xl p-4 text-center">
+                        <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-3"></div>
+                        <div class="font-medium">Producer</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-[#050505] border-t border-white/10 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left text-sm text-gray-600">
+            &copy; 2026 Vermillion. All rights reserved.
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
