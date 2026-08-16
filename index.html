@@ -1,363 +1,797 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VERMILLION | High-Converting Video Ads</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        vermillion: '#E34234',
-                        dark: '#0a0a0a',
-                        card: '#111111'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+  <!-- Developer: Rituraj Shukla -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vermillion Frames | Performance Video Ad Studio</title>
+  <meta name="description" content="Performance video ad studio for growth marketers and D2C brands. UGC, AI-avatar, and real-human video ads engineered for hook rate, ROAS, and scale.">
+  
+  <!-- Favicon / Brand Mark -->
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+
+  <!-- Google Fonts: Poppins (300, 400, 500, 600, 700) & Alex Brush -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Design System CSS -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body class="bg-black text-white antialiased">
+  <!-- External SVGs for Sprites & Logos -->
+  <div style="display: none;">
+    <!-- Inline references load from assets/icons/icons.svg and assets/images/clients.svg -->
+  </div>
 
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass-nav border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">VERMILLION</a>
-                </div>
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html"
-                            class="text-white hover:text-vermillion px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
-                        <a href="services.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
-                        <a href="portfolio.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Work</a>
-                        <a href="contact.html"
-                            class="bg-white text-black hover:bg-gray-200 px-5 py-2 rounded-full text-sm font-medium transition-all duration-300">Book
-                            a Call</a>
-                    </div>
-                </div>
-                <div class="-mr-2 flex md:hidden">
-                    <button id="mobile-menu-button" type="button"
-                        class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+  <!-- =========================================================================
+       GLOBAL STICKY HEADER
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Horizontal Lockup with exact user-provided mark & brand tagline -->
+      <a href="index.html" class="header-logo" aria-label="Vermillion Frames Home">
+        <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="44" height="44">
+        <div class="logo-text-group">
+          <span class="logo-brand-title">VERMILLION <span class="logo-brand-accent">FRAMES</span></span>
+          <span class="logo-brand-tagline">"Straight From Our Vision to Your Screen"</span>
         </div>
-        <!-- Mobile menu -->
-        <div class="hidden md:hidden bg-black/95 backdrop-blur-xl absolute w-full" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-b border-white/10">
-                <a href="index.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="services.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="portfolio.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work</a>
-                <a href="contact.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-            </div>
-        </div>
-    </nav>
+      </a>
 
-    <!-- Hero Section -->
-    <section class="relative h-screen flex items-center justify-center overflow-hidden hero-gradient">
-        <!-- Abstract Background Elements -->
-        <div class="absolute inset-0 overflow-hidden">
-            <div
-                class="absolute -top-1/2 -left-1/4 w-[1000px] h-[1000px] bg-vermillion/10 rounded-full blur-3xl opacity-30 animate-pulse">
-            </div>
-            <div
-                class="absolute -bottom-1/2 -right-1/4 w-[800px] h-[800px] bg-blue-500/5 rounded-full blur-3xl opacity-20">
-            </div>
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+        <button class="mobile-menu-btn" aria-label="Open mobile menu">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="header-logo" style="padding: 0;">
+          <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="38" height="38">
+          <div class="logo-text-group">
+            <span class="logo-brand-title" style="font-size: 1rem;">VERMILLION <span class="logo-brand-accent">FRAMES</span></span>
+            <span class="logo-brand-tagline" style="font-size: 0.52rem;">"Straight From Our Vision to Your Screen"</span>
+          </div>
+        </a>
+        <button class="drawer-close-btn modal-close-btn" aria-label="Close menu">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work &amp; Case Studies</a>
+        <a href="process.html">Process</a>
+        <a href="about.html">About Studio</a>
+        <a href="pricing.html">Pricing &amp; Sprints</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Strategy Call</a>
+      <p class="text-muted" style="font-size: 0.75rem; margin-top: 1rem; text-align: center;">
+        "Straight From Our Vision to Your Screen"
+      </p>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         HERO SECTION
+         ========================================================================= -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow">
+            <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-zap"></use></svg>
+            Performance Video Ad Studio
+          </div>
+          <p class="hero-tagline">"Straight From Our Vision to Your Screen"</p>
+          <h1 class="hero-title">
+            Video Ads Engineered For <span class="text-red">3x ROAS</span> and Rapid Creative Testing.
+          </h1>
+          <p class="hero-desc">
+            We partner with growth marketers and D2C founders to produce high-hook UGC, AI-avatar, and real-human video ads that slash CAC and scale ad spend with zero agency fluff.
+          </p>
+          <div class="hero-ctas">
+            <a href="contact.html" class="btn btn-primary btn-lg">
+              Book a Strategy Call
+              <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+            </a>
+            <a href="work.html" class="btn btn-secondary btn-lg">
+              <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-play"></use></svg>
+              View Our Work
+            </a>
+          </div>
+          <div class="hero-trust-badge">
+            <span class="dot"></span>
+            <span>Active Sprint Openings Available &bull; 48-Hour Test Batch Delivery</span>
+          </div>
         </div>
 
-        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-8 animate-on-scroll">
-                We Create <br />
-                <span class="text-gradient">High-Converting Video Ads</span>
-            </h1>
-            <p
-                class="mt-4 text-xl md:text-2xl text-gray-400 max-w-3xl mx-auto mb-10 animate-on-scroll delay-100 font-light">
-                UGC, AI, and Real Human Video Ads that drive performance for modern brands.
+        <div class="hero-media-wrapper">
+          <div class="hero-video-card">
+            <div class="video-frame-inner">
+              <div class="video-badge-top">
+                <span class="hook-rate-tag">
+                  <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-trending-up"></use></svg>
+                  42.8% Hook Rate
+                </span>
+                <span style="font-size: 0.75rem; background: rgba(0,0,0,0.6); padding: 2px 8px; border-radius: 4px;">0:28s</span>
+              </div>
+
+              <!-- Interactive Video Reel Trigger -->
+              <div class="video-play-center" data-video-trigger data-title="Levi's Direct-Response UGC Campaign" data-client="Levi's" data-metric="3.8x ROAS • +44% 3s Hold Rate">
+                <svg class="icon-lg" style="margin-left: 3px;"><use href="assets/icons/icons.svg#icon-play"></use></svg>
+              </div>
+
+              <div class="video-meta-bottom">
+                <p class="video-meta-title">Winning Hook 3B — Problem-Agitate-Social Proof</p>
+                <div class="video-meta-metrics">
+                  <span><strong>3.8x</strong> ROAS</span>
+                  <span><strong>$140k+</strong> Scaled Spend</span>
+                  <span><strong>-31%</strong> CAC</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Metric Pill -->
+          <div class="floating-metric-pill">
+            <div class="metric-pill-value">10k+</div>
+            <div>
+              <div class="metric-pill-label">Performance Ads Delivered</div>
+              <div style="font-size: 0.7rem; color: var(--success-green); font-weight: 600;">+218% Average Client Lift</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         PROOF BAR (CLIENT LOGOS)
+         ========================================================================= -->
+    <section class="proof-bar" aria-label="Trusted Clients">
+      <div class="container">
+        <p class="proof-bar-heading">Trusted by Growth Leaders &amp; Scaled Brands</p>
+        <div class="proof-logos-track">
+          <!-- Levi's -->
+          <div class="client-logo-item" title="Levi's">
+            <svg style="width: 110px; height: 36px;"><use href="assets/images/clients.svg#client-levis"></use></svg>
+          </div>
+          <!-- Unacademy -->
+          <div class="client-logo-item" title="Unacademy">
+            <svg style="width: 140px; height: 32px;"><use href="assets/images/clients.svg#client-unacademy"></use></svg>
+          </div>
+          <!-- SEEKHO -->
+          <div class="client-logo-item" title="SEEKHO">
+            <svg style="width: 120px; height: 32px;"><use href="assets/images/clients.svg#client-seekho"></use></svg>
+          </div>
+          <!-- ZingBus -->
+          <div class="client-logo-item" title="ZingBus">
+            <svg style="width: 120px; height: 32px;"><use href="assets/images/clients.svg#client-zingbus"></use></svg>
+          </div>
+          <!-- Astrotalk -->
+          <div class="client-logo-item" title="Astrotalk">
+            <svg style="width: 130px; height: 32px;"><use href="assets/images/clients.svg#client-astrotalk"></use></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         STATS STRIP (ANIMATED PROOF POINTS)
+         ========================================================================= -->
+    <section class="stats-strip" aria-label="Key Performance Numbers">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-number" data-target="10000" data-suffix="+">10,000+</div>
+            <div class="stat-label">Videos Delivered</div>
+            <div class="stat-subtext">Direct-response tested assets</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="100" data-suffix="+">100+</div>
+            <div class="stat-label">Brands Served</div>
+            <div class="stat-subtext">D2C, Apps, &amp; Growth Marketers</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="5" data-prefix="$" data-suffix="M+">$5M+</div>
+            <div class="stat-label">Ad Spend Scaled</div>
+            <div class="stat-subtext">Across Meta, TikTok &amp; YouTube</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-number" data-target="3.2" data-suffix="x">3.2x</div>
+            <div class="stat-label">Average ROAS</div>
+            <div class="stat-subtext">Validated performance creative</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SERVICES GRID (6 CAPABILITIES)
+         ========================================================================= -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Production Capabilities</div>
+          <h2>Creative Formats Built For High-Hook Conversion</h2>
+          <p class="subtitle">Every video is engineered around proven hook formulas, audience retention curves, and direct-response consumer psychology.</p>
+        </div>
+
+        <div class="grid grid-3">
+          <!-- Service 1: UGC Video Ads -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-icon">
+                <svg class="icon"><use href="assets/icons/icons.svg#icon-users"></use></svg>
+              </div>
+              <h3 class="service-card-title">UGC Video Ads</h3>
+              <p class="service-card-desc">
+                Native creator content designed for TikTok &amp; Meta Reels. Unfiltered testimonials, unboxings, and problem-solution angles that blend natively into user feeds.
+              </p>
+              <div class="service-card-tags">
+                <span class="service-tag">Native Creator Casting</span>
+                <span class="service-tag">Problem-Agitate-Solve</span>
+                <span class="service-tag">&gt;35% Hook Rate</span>
+              </div>
+            </div>
+            <a href="services-ugc.html" class="service-link">
+              Explore UGC Sprints <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+
+          <!-- Service 2: AI-Avatar & Synthetic Ads -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-icon">
+                <svg class="icon"><use href="assets/icons/icons.svg#icon-cpu"></use></svg>
+              </div>
+              <h3 class="service-card-title">AI Video &amp; Synthetic Avatars</h3>
+              <p class="service-card-desc">
+                Ultra-rapid creative testing using hyper-realistic AI avatars. Test 20+ multilingual hooks in 48 hours without expensive re-shoots or talent scheduling bottlenecks.
+              </p>
+              <div class="service-card-tags">
+                <span class="service-tag">Multilingual Scale</span>
+                <span class="service-tag">48h Turnaround</span>
+                <span class="service-tag">Rapid Angle Testing</span>
+              </div>
+            </div>
+            <a href="services.html" class="service-link">
+              Explore AI Ads <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+
+          <!-- Service 3: Meta & TikTok Paid Social -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-icon">
+                <svg class="icon"><use href="assets/icons/icons.svg#icon-target"></use></svg>
+              </div>
+              <h3 class="service-card-title">Meta &amp; TikTok Paid Social Ads</h3>
+              <p class="service-card-desc">
+                High-velocity 9:16 vertical ads designed specifically for algorithmic ad auctions. Fast visual pacing, dynamic kinetic typography, and persistent call-to-actions.
+              </p>
+              <div class="service-card-tags">
+                <span class="service-tag">9:16 &amp; 4:5 Formats</span>
+                <span class="service-tag">Kinetic Subtitles</span>
+                <span class="service-tag">Direct CPA Optimization</span>
+              </div>
+            </div>
+            <a href="services.html" class="service-link">
+              Explore Paid Social <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+
+          <!-- Service 4: Real-Human Commercials -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-icon">
+                <svg class="icon"><use href="assets/icons/icons.svg#icon-film"></use></svg>
+              </div>
+              <h3 class="service-card-title">Real-Human Studio Ads</h3>
+              <p class="service-card-desc">
+                Studio-grade commercial production with professional actors, high-end cinema lighting, precision product staging, and cinematic color grading for established brands.
+              </p>
+              <div class="service-card-tags">
+                <span class="service-tag">Studio Lighting</span>
+                <span class="service-tag">Professional Actors</span>
+                <span class="service-tag">High-Production Polish</span>
+              </div>
+            </div>
+            <a href="services.html" class="service-link">
+              Explore Studio Production <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+
+          <!-- Service 5: Direct-Response Scriptwriting -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-icon">
+                <svg class="icon"><use href="assets/icons/icons.svg#icon-award"></use></svg>
+              </div>
+              <h3 class="service-card-title">Direct-Response Scriptwriting</h3>
+              <p class="service-card-desc">
+                Scripts crafted by conversion copywriters who understand hook rates, open loops, objection handles, and urgency triggers. Zero fluff or vanity dialogue.
+              </p>
+              <div class="service-card-tags">
+                <span class="service-tag">3-Second Hook Matrix</span>
+                <span class="service-tag">Retention Loops</span>
+                <span class="service-tag">Objection Crushing</span>
+              </div>
+            </div>
+            <a href="services.html" class="service-link">
+              Explore Scriptwriting <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+
+          <!-- Service 6: Creative Testing & Pre-Production -->
+          <div class="service-card">
+            <div>
+              <div class="service-card-icon">
+                <svg class="icon"><use href="assets/icons/icons.svg#icon-zap"></use></svg>
+              </div>
+              <h3 class="service-card-title">Testing &amp; Pre-Production</h3>
+              <p class="service-card-desc">
+                Modular ad production where every shoot yields 3 hooks &times; 2 body angles &times; 2 CTAs (12 unique ad variations) to find winning creative combinations fast.
+              </p>
+              <div class="service-card-tags">
+                <span class="service-tag">Modular Batching</span>
+                <span class="service-tag">12x Variation Multiplier</span>
+                <span class="service-tag">Fatigue Prevention</span>
+              </div>
+            </div>
+            <a href="process.html" class="service-link">
+              Explore Testing System <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         WHY VERMILLION (DIFFERENTIATORS & GROWTH CHART)
+         ========================================================================= -->
+    <section class="section section-subtle" id="why-us">
+      <div class="container">
+        <div class="why-grid">
+          <div>
+            <div class="eyebrow">The Performance Advantage</div>
+            <h2>Why Growth Teams Choose Vermillion Over Fluffy Agencies</h2>
+            <p class="subtitle" style="margin-bottom: 2rem;">
+              Traditional agencies burn weeks on vanity storyboards. We operate like an in-house performance creative unit built for media buyers and D2C founders.
             </p>
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 animate-on-scroll delay-200">
-                <a href="portfolio.html"
-                    class="w-full sm:w-auto px-8 py-4 bg-transparent border border-white/20 text-white rounded-full font-medium hover:bg-white/5 transition-all duration-300 backdrop-blur-sm">
-                    View Our Work
-                </a>
-                <a href="contact.html"
-                    class="w-full sm:w-auto px-8 py-4 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition-all duration-300 shadow-[0_0_20px_rgba(255,255,255,0.2)]">
-                    Book a Call
-                </a>
-            </div>
-        </div>
 
-        <!-- Scroll indicator -->
-        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce opacity-50">
-            <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3">
-                </path>
-            </svg>
+            <div class="differentiator-list">
+              <div class="differentiator-item">
+                <div class="diff-number">01</div>
+                <div class="diff-content">
+                  <h4>Zero Agency Fluff &bull; Metrics-First Mindset</h4>
+                  <p>We speak ROAS, CPA, 3s Hook Rate, and 15s Hold Rate. Every creative decision is made to lower customer acquisition cost, not win design awards.</p>
+                </div>
+              </div>
+
+              <div class="differentiator-item">
+                <div class="diff-number">02</div>
+                <div class="diff-content">
+                  <h4>48-Hour Creative Testing Sprints</h4>
+                  <p>Speed wins in paid media. When ad fatigue hits, we deliver fresh hook variations and cutdowns within 48 hours to sustain profitable scale.</p>
+                </div>
+              </div>
+
+              <div class="differentiator-item">
+                <div class="diff-number">03</div>
+                <div class="diff-content">
+                  <h4>Modular Variation Multipliers</h4>
+                  <p>One concept never means one video. We batch 3 unique visual hooks, 2 core value props, and 2 direct CTAs so your media buyers have 12 fresh assets to test.</p>
+                </div>
+              </div>
+
+              <div class="differentiator-item">
+                <div class="diff-number">04</div>
+                <div class="diff-content">
+                  <h4>Full-Funnel Native Authenticity</h4>
+                  <p>From iPhone UGC to studio polish, our creatives look like authentic platform content that users want to watch—not ads they immediately scroll past.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div class="chart-container">
+              <img src="assets/images/chart-growth.svg" alt="Creative Testing Velocity and ROAS Scaling Curve vs Traditional Agency" width="600" height="380">
+              <div style="margin-top: 1rem; display: flex; justify-content: space-between; font-size: 0.75rem; color: var(--text-inverse-muted);">
+                <span>&bull; Vermillion High-Velocity Sprint Iterations</span>
+                <span style="color: #E85D4E; font-weight: 600;">+218% Scaling Lift</span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Services Overview -->
-    <section class="py-24 bg-black">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-20 animate-on-scroll">
-                <h2 class="text-3xl md:text-5xl font-bold mb-6">Expertise</h2>
-                <p class="text-gray-400 max-w-2xl mx-auto text-lg">Comprehensive video production services tailored for
-                    scale.</p>
-            </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Card 1 -->
-                <div
-                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-100">
-                    <div
-                        class="h-12 w-12 bg-vermillion/20 rounded-2xl flex items-center justify-center mb-6 text-vermillion group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">UGC Video Ads</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Authentic, creator-led content that resonates with
-                        audiences and builds trust.</p>
-                </div>
-
-                <!-- Card 2 -->
-                <div
-                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-200">
-                    <div
-                        class="h-12 w-12 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6 text-blue-400 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Script Writing</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Data-backed hooks and storytelling designed to stop
-                        the scroll and convert.</p>
-                </div>
-
-                <!-- Card 3 -->
-                <div
-                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-300">
-                    <div
-                        class="h-12 w-12 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6 text-purple-400 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 10V3L4 14h7v7l9-11h-7z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Meta Ads Services</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">End-to-end creative testing and scaling strategies
-                        for Facebook & Instagram.</p>
-                </div>
-
-                <!-- Card 4 -->
-                <div
-                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-100">
-                    <div
-                        class="h-12 w-12 bg-green-500/20 rounded-2xl flex items-center justify-center mb-6 text-green-400 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Real Human Ads</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Professional actors and creators delivering your
-                        message with perfect delivery.</p>
-                </div>
-
-                <!-- Card 5 -->
-                <div
-                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-200">
-                    <div
-                        class="h-12 w-12 bg-pink-500/20 rounded-2xl flex items-center justify-center mb-6 text-pink-400 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19.428 15.428a2 2 0 00-1.022-.547l-2.384-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">AI Video Ads</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Cutting-edge AI avatars and voiceovers for rapid
-                        testing and iteration.</p>
-                </div>
-
-                <!-- Card 6 -->
-                <div
-                    class="group p-8 rounded-3xl bg-card border border-white/5 hover:border-white/10 hover:bg-white/5 transition-all duration-500 animate-on-scroll delay-300">
-                    <div
-                        class="h-12 w-12 bg-yellow-500/20 rounded-2xl flex items-center justify-center mb-6 text-yellow-400 group-hover:scale-110 transition-transform">
-                        <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                        </svg>
-                    </div>
-                    <h3 class="text-xl font-semibold mb-3">Pre-Production</h3>
-                    <p class="text-gray-400 text-sm leading-relaxed">Detailed planning, casting, and storyboarding
-                        ensures a smooth shoot.</p>
-                </div>
-            </div>
+    <!-- =========================================================================
+         FEATURED WORK (CASE STUDIES)
+         ========================================================================= -->
+    <section class="section" id="work">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Proven Results</div>
+          <h2>Featured Performance Campaigns</h2>
+          <p class="subtitle">Real video ads tested with real ad dollars. Click any case study to inspect the hook mechanics and performance metrics.</p>
         </div>
+
+        <div class="grid grid-3">
+          <!-- Case Study 1: Levi's -->
+          <article class="case-study-card" data-category="ugc meta">
+            <div class="case-thumbnail" data-video-trigger data-title="Levi's UGC Hook Testing Campaign" data-client="Levi's" data-metric="3.8x ROAS • +44% 3s Hold Rate">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1f1f1f 0%, #30100d 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                <svg style="width: 90px; height: 32px; opacity: 0.85;"><use href="assets/images/clients.svg#client-levis"></use></svg>
+                <div class="case-platform-tag">Meta Ads &bull; UGC</div>
+                <div class="case-overlay-play">
+                  <div class="case-play-btn"><svg class="icon"><use href="assets/icons/icons.svg#icon-play"></use></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-client">Levi's</div>
+              <h3 class="case-title">D2C Denim Conversion Sprint</h3>
+              <p style="font-size: 0.875rem; color: var(--gray-700); margin-bottom: 1rem;">
+                Deployed 12 UGC hook variations targeting denim fit anxiety. Winning hook boosted hold rate by 44% and drove record ROAS during peak season.
+              </p>
+              <div class="case-metrics-grid">
+                <div class="case-metric-item">
+                  <div class="case-metric-val highlight">3.8x</div>
+                  <div class="case-metric-lbl">ROAS</div>
+                </div>
+                <div class="case-metric-item">
+                  <div class="case-metric-val">+44%</div>
+                  <div class="case-metric-lbl">Hook Rate</div>
+                </div>
+                <div class="case-metric-item">
+                  <div class="case-metric-val">-28%</div>
+                  <div class="case-metric-lbl">CAC</div>
+                </div>
+              </div>
+              <a href="case-study-detail.html" class="service-link">
+                Read Full Case Study <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Case Study 2: ZingBus -->
+          <article class="case-study-card" data-category="meta ai">
+            <div class="case-thumbnail" data-video-trigger data-title="ZingBus Travel App User Acquisition" data-client="ZingBus" data-metric="3.4x ROAS • 18k App Installs">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1c1a17 0%, #2f190e 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                <svg style="width: 100px; height: 32px; opacity: 0.85;"><use href="assets/images/clients.svg#client-zingbus"></use></svg>
+                <div class="case-platform-tag">Meta &amp; TikTok &bull; Real Human</div>
+                <div class="case-overlay-play">
+                  <div class="case-play-btn"><svg class="icon"><use href="assets/icons/icons.svg#icon-play"></use></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-client">ZingBus</div>
+              <h3 class="case-title">Travel App Booking Acquisition</h3>
+              <p style="font-size: 0.875rem; color: var(--gray-700); margin-bottom: 1rem;">
+                Comparison-style video ads pitting cramped generic buses against premium lounge travel, resulting in a 3.4x ROAS across inter-city routes.
+              </p>
+              <div class="case-metrics-grid">
+                <div class="case-metric-item">
+                  <div class="case-metric-val highlight">3.4x</div>
+                  <div class="case-metric-lbl">ROAS</div>
+                </div>
+                <div class="case-metric-item">
+                  <div class="case-metric-val">18,500+</div>
+                  <div class="case-metric-lbl">Bookings</div>
+                </div>
+                <div class="case-metric-item">
+                  <div class="case-metric-val">-35%</div>
+                  <div class="case-metric-lbl">Cost / Lead</div>
+                </div>
+              </div>
+              <a href="case-study-detail.html" class="service-link">
+                Read Full Case Study <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Case Study 3: Unacademy & SEEKHO -->
+          <article class="case-study-card" data-category="ugc commercial">
+            <div class="case-thumbnail" data-video-trigger data-title="EdTech Upskilling & Subscription Growth" data-client="Unacademy & SEEKHO" data-metric="4.1x ROAS • +52% CTR">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #111e1b 0%, #1c261e 100%); display: flex; align-items: center; justify-content: center; position: relative;">
+                <svg style="width: 120px; height: 32px; opacity: 0.85;"><use href="assets/images/clients.svg#client-unacademy"></use></svg>
+                <div class="case-platform-tag">YouTube Shorts &bull; UGC</div>
+                <div class="case-overlay-play">
+                  <div class="case-play-btn"><svg class="icon"><use href="assets/icons/icons.svg#icon-play"></use></svg></div>
+                </div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-client">Unacademy &amp; SEEKHO</div>
+              <h3 class="case-title">EdTech Subscription Sprints</h3>
+              <p style="font-size: 0.875rem; color: var(--gray-700); margin-bottom: 1rem;">
+                Micro-storytelling ads highlighting career breakthroughs and salary leaps. Generated over 25,000 course signups with a 4.1x ROAS.
+              </p>
+              <div class="case-metrics-grid">
+                <div class="case-metric-item">
+                  <div class="case-metric-val highlight">4.1x</div>
+                  <div class="case-metric-lbl">ROAS</div>
+                </div>
+                <div class="case-metric-item">
+                  <div class="case-metric-val">+52%</div>
+                  <div class="case-metric-lbl">CTR</div>
+                </div>
+                <div class="case-metric-item">
+                  <div class="case-metric-val">25k+</div>
+                  <div class="case-metric-lbl">Signups</div>
+                </div>
+              </div>
+              <a href="case-study-detail.html" class="service-link">
+                Read Full Case Study <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="work.html" class="btn btn-secondary btn-lg">
+            Explore All 100+ Campaigns &amp; Video Ads
+            <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <!-- Social Proof -->
-    <section class="py-24 border-y border-white/5 bg-[#050505]">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16 animate-on-scroll">
-                <div>
-                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">10k+</div>
-                    <div class="text-sm text-gray-500 uppercase tracking-widest">Videos Delivered</div>
-                </div>
-                <div>
-                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">100+</div>
-                    <div class="text-sm text-gray-500 uppercase tracking-widest">Brands Served</div>
-                </div>
-                <div>
-                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">5M+</div>
-                    <div class="text-sm text-gray-500 uppercase tracking-widest">Ad Spend Managed</div>
-                </div>
-                <div>
-                    <div class="text-4xl md:text-5xl font-bold text-white mb-2">3x</div>
-                    <div class="text-sm text-gray-500 uppercase tracking-widest">Average ROAS</div>
-                </div>
-            </div>
-
-            <p class="text-gray-500 mb-8 text-sm uppercase tracking-widest animate-on-scroll">Trusted by Industry
-                Leaders</p>
-            <div
-                class="flex flex-wrap justify-center items-center gap-8 md:gap-16 opacity-60 grayscale hover:grayscale-0 transition-all duration-500 animate-on-scroll delay-100">
-                <!-- Placeholder Logos using Text/SVG for now -->
-                <div class="text-xl font-bold font-serif">Levi's</div>
-                <div class="text-xl font-bold">Unacademy</div>
-                <div class="text-xl font-bold tracking-widest">SEEKHO</div>
-                <div class="text-xl font-bold italic">ZingBus</div>
-                <div class="text-xl font-bold">Astrotalk</div>
-            </div>
+    <!-- =========================================================================
+         PROCESS TEASER (5 CONDENSED STEPS)
+         ========================================================================= -->
+    <section class="section section-dark dark-section" id="process-teaser">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">The 5-Step Methodology</div>
+          <h2>Our Proven Video Production &amp; Testing Engine</h2>
+          <p class="subtitle" style="color: var(--text-inverse-muted);">
+            A systematic creative testing framework designed to deliver winning ad assets without bottlenecking your internal team.
+          </p>
         </div>
+
+        <div class="process-flow">
+          <div class="process-step-card">
+            <span class="process-step-num">STEP 01</span>
+            <h4 class="process-step-title">Growth Audit</h4>
+            <p class="process-step-desc">We analyze your historical ad account metrics, winning angles, competitor gaps, and customer objections.</p>
+          </div>
+          <div class="process-step-card">
+            <span class="process-step-num">STEP 02</span>
+            <h4 class="process-step-title">Hook Scripting</h4>
+            <p class="process-step-desc">Direct-response copywriters script multi-hook variations (visual, pattern interrupt, problem-focused).</p>
+          </div>
+          <div class="process-step-card">
+            <span class="process-step-num">STEP 03</span>
+            <h4 class="process-step-title">Production</h4>
+            <p class="process-step-desc">Native creator casting, AI-avatar rendering, or studio filming executed under strict brand guidelines.</p>
+          </div>
+          <div class="process-step-card">
+            <span class="process-step-num">STEP 04</span>
+            <h4 class="process-step-title">Testing Matrix</h4>
+            <p class="process-step-desc">Batch delivery of 3 hooks &times; 2 bodies &times; 2 CTAs formatted for 9:16 and 4:5 feed placements.</p>
+          </div>
+          <div class="process-step-card">
+            <span class="process-step-num">STEP 05</span>
+            <h4 class="process-step-title">Scale Sprints</h4>
+            <p class="process-step-desc">We review hook &amp; hold rates, isolate the top 10% winners, and iterate dynamic cutdowns in 48 hours.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="process.html" class="btn btn-primary">
+            Deep-Dive into Our 5-Step Process
+            <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+          </a>
+        </div>
+      </div>
     </section>
 
-    <!-- Why Choose Us -->
-    <section class="py-24 bg-black">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row items-center gap-12">
-                <div class="w-full md:w-1/2 animate-on-scroll">
-                    <h2 class="text-3xl md:text-5xl font-bold mb-6">Why Vermillion?</h2>
-                    <p class="text-gray-400 text-lg mb-8">We don't just upgrade your creatives; we upgrade your
-                        performance. Our data-driven approach ensures every frame adds value.</p>
-
-                    <ul class="space-y-4">
-                        <li class="flex items-center space-x-3">
-                            <svg class="w-5 h-5 text-vermillion" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span class="text-gray-300">Performance-first creatives</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <svg class="w-5 h-5 text-vermillion" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span class="text-gray-300">Trend-based storytelling</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <svg class="w-5 h-5 text-vermillion" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span class="text-gray-300">Data-backed scripting</span>
-                        </li>
-                        <li class="flex items-center space-x-3">
-                            <svg class="w-5 h-5 text-vermillion" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M5 13l4 4L19 7" />
-                            </svg>
-                            <span class="text-gray-300">End-to-end video production</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="w-full md:w-1/2 animate-on-scroll delay-200">
-                    <div
-                        class="relative bg-gradient-to-tr from-gray-900 to-gray-800 rounded-2xl p-6 aspect-video flex items-center justify-center border border-white/10 shadow-2xl">
-                        <!-- Abstract Visual representation -->
-                        <div class="text-center">
-                            <div class="text-6xl mb-4">📈</div>
-                            <div class="text-gray-400 font-mono text-sm">Growth Trajectory</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- =========================================================================
+         TESTIMONIALS (METRICS-FOCUSED)
+         ========================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div class="eyebrow">Client Feedback</div>
+          <h2>What Growth Marketers Say About Working With Us</h2>
+          <p class="subtitle">Direct-response performance with zero excuses.</p>
         </div>
+
+        <div class="grid grid-3">
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "Vermillion Frames completely changed how we think about creative testing. We went from waiting 3 weeks for a single agency asset to testing 12 high-hook variations every fortnight. Our Meta ROAS jumped from 2.1x to 3.8x."
+            </p>
+            <div class="testimonial-author-block">
+              <div class="testimonial-avatar">AK</div>
+              <div>
+                <div class="author-name">Anand Kumar</div>
+                <div class="author-role">Head of Performance Marketing &bull; D2C Apparel</div>
+              </div>
+            </div>
+            <div class="testimonial-metric-tag">+81% ROAS Improvement</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "The speed is unmatched. When our winning ad started fatiguing, Vermillion delivered 4 new hook iterations within 48 hours that immediately reclaimed our target CPA. They speak the language of growth marketers."
+            </p>
+            <div class="testimonial-author-block">
+              <div class="testimonial-avatar">RS</div>
+              <div>
+                <div class="author-name">Rohit Sharma</div>
+                <div class="author-role">Growth Lead &bull; Mobile Mobility &amp; Travel</div>
+              </div>
+            </div>
+            <div class="testimonial-metric-tag">-35% Customer Acquisition Cost</div>
+          </div>
+
+          <div class="testimonial-card">
+            <p class="testimonial-quote">
+              "No fluffy creative decks or endless meetings. Just sharp scripts, authentic creators, and ads that people actually stop scrolling to watch. They are our go-to video ad partner."
+            </p>
+            <div class="testimonial-author-block">
+              <div class="testimonial-avatar">PG</div>
+              <div>
+                <div class="author-name">Pooja Gupta</div>
+                <div class="author-role">Marketing VP &bull; Consumer Tech Platform</div>
+              </div>
+            </div>
+            <div class="testimonial-metric-tag">4.1x Verified Ad Return</div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#050505] border-t border-white/10 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
-                <div class="col-span-1 md:col-span-1">
-                    <a href="index.html"
-                        class="text-2xl font-bold tracking-tighter text-white mb-4 block">VERMILLION</a>
-                    <p class="text-gray-500 text-sm">Driving growth through high-converting video creatives.</p>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Company</h4>
-                    <ul class="space-y-2 text-sm text-gray-500">
-                        <li><a href="about.html" class="hover:text-white transition-colors">About</a></li>
-                        <li><a href="portfolio.html" class="hover:text-white transition-colors">Portfolio</a></li>
-                        <li><a href="contact.html" class="hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Services</h4>
-                    <ul class="space-y-2 text-sm text-gray-500">
-                        <li><a href="services.html" class="hover:text-white transition-colors">UGC Ads</a></li>
-                        <li><a href="services.html" class="hover:text-white transition-colors">Meta Ads</a></li>
-                        <li><a href="services.html" class="hover:text-white transition-colors">AI Video</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h4 class="text-white font-semibold mb-4">Connect</h4>
-                    <div class="flex space-x-4">
-                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><span
-                                class="sr-only">Twitter</span><svg class="w-5 h-5" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                            </svg></a>
-                        <a href="#" class="text-gray-500 hover:text-white transition-colors"><span
-                                class="sr-only">Instagram</span><svg class="w-5 h-5" fill="currentColor"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zm0 10.162a3.997 3.997 0 110-7.994 3.997 3.997 0 010 7.994zm5.338-3.205a1.2 1.2 0 110-2.4 1.2 1.2 0 010 2.4z" />
-                            </svg></a>
-                    </div>
-                </div>
-            </div>
-            <div class="border-t border-white/5 pt-8 text-center md:text-left text-sm text-gray-600">
-                &copy; 2026 Vermillion. All rights reserved.
-            </div>
+    <!-- =========================================================================
+         FINAL HIGH-CONVERSION CTA
+         ========================================================================= -->
+    <section class="section section-dark dark-section" style="position: relative; overflow: hidden; border-top: 1px solid var(--border-dark);">
+      <div class="container container-narrow" style="text-align: center; position: relative; z-index: 2;">
+        <div class="eyebrow">Ready For High-Converting Creatives?</div>
+        <h2 style="font-size: var(--text-h1); margin-bottom: 1.5rem;">
+          Stop Burning Ad Spend on Low-Hook Video Ads.
+        </h2>
+        <p class="subtitle" style="color: var(--text-inverse-muted); margin-bottom: 2.5rem;">
+          Book a 20-minute creative strategy session. We'll audit your current video ads, identify hook rate leaks, and provide a 3-concept testing plan for free.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="contact.html" class="btn btn-primary btn-lg">
+            Book Your Strategy Call
+            <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+          </a>
+          <a href="pricing.html" class="btn btn-secondary-dark btn-lg">
+            View Pricing &amp; Sprints
+          </a>
         </div>
-    </footer>
-    <script src="js/main.js"></script>
+        <p style="font-size: 0.75rem; color: var(--text-inverse-subtle); margin-top: 1.5rem;">
+          Zero obligation &bull; 48-Hour first draft guarantee on all sprint retainers
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       GLOBAL FOOTER & SITEMAP
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="header-logo" style="padding: 0; margin-bottom: 1rem;">
+            <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="44" height="44">
+            <div class="logo-text-group">
+              <span class="logo-brand-title" style="color: #FFFFFF;">VERMILLION <span class="logo-brand-accent" style="color: #E85D4E;">FRAMES</span></span>
+              <span class="logo-brand-tagline" style="color: #FFA499;">"Straight From Our Vision to Your Screen"</span>
+            </div>
+          </a>
+          <p>
+            Performance-driven video ad studio for growth marketers, media buyers, and D2C founders. Engineered for hook rate, hold rate, and ROAS.
+          </p>
+          <p style="font-size: 0.75rem; color: var(--text-inverse-subtle); margin-top: 1rem;">
+            "Straight From Our Vision to Your Screen"
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Capabilities</h4>
+          <nav class="footer-nav">
+            <a href="services-ugc.html">UGC Video Ads</a>
+            <a href="services.html">AI-Avatar Video Ads</a>
+            <a href="services.html">Meta &amp; TikTok Paid Social</a>
+            <a href="services.html">Studio Real-Human Ads</a>
+            <a href="services.html">Direct-Response Scripts</a>
+            <a href="process.html">Creative Testing Matrix</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <nav class="footer-nav">
+            <a href="work.html">Case Studies &amp; Work</a>
+            <a href="process.html">5-Step Methodology</a>
+            <a href="about.html">About &amp; Brand Pillars</a>
+            <a href="pricing.html">Pricing &amp; Sprints</a>
+            <a href="contact.html">Contact &amp; Brief</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Get in Touch</h4>
+          <p style="font-size: 0.875rem; color: var(--text-inverse-muted); margin-bottom: 1rem;">
+            Have an active campaign or high-spend account needing creative testing?
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="width: 100%;">
+            Submit a Creative Brief
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear">2026</span> Vermillion Frames. All rights reserved. &bull; Developer: Rituraj Shukla
+        </div>
+        <div class="footer-tagline">
+          "Straight From Our Vision to Your Screen"
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       VIDEO REEL MODAL PLAYER
+       ========================================================================= -->
+  <div id="videoModal" class="video-modal" role="dialog" aria-modal="true" aria-labelledby="modalVideoTitle">
+    <div class="modal-content-box">
+      <div class="modal-header-bar">
+        <div>
+          <span id="modalVideoClient" style="font-size: 0.75rem; color: #E85D4E; font-weight: 700; text-transform: uppercase;">Client Case Study</span>
+          <h3 id="modalVideoTitle" style="font-size: 1.1rem; color: #FFF; margin-top: 2px;">Campaign Video Reel</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Close video player">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+      <div class="modal-video-display">
+        <!-- Interactive Simulated Player Screen with Play/Pause & Metrics Overlay -->
+        <div style="text-align: center; color: #FFF; padding: 2rem;">
+          <div style="width: 72px; height: 72px; border-radius: 50%; background-color: var(--red-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; box-shadow: 0 0 0 10px rgba(168,46,31,0.3);">
+            <svg class="icon-lg" style="margin-left: 4px;"><use href="assets/icons/icons.svg#icon-play"></use></svg>
+          </div>
+          <p id="modalVideoMetric" style="font-size: 1.1rem; font-weight: 600; color: #FFA499;">3.8x ROAS • +44% 3s Hold Rate</p>
+          <p style="font-size: 0.8rem; color: var(--text-inverse-muted); margin-top: 0.5rem;">
+            Full 9:16 Direct-Response Master Reel &bull; 1080&times;1920 Pro Video Stream
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Master JavaScript Application -->
+  <script src="js/main.js"></script>
 </body>
-
 </html>

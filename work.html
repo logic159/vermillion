@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Developer: Rituraj Shukla -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Performance Video Ad Portfolio &amp; Case Studies | Vermillion Frames</title>
+  <meta name="description" content="Explore our library of performance-tested video ads across Meta, TikTok, and YouTube. Filter by UGC, AI Avatars, Paid Social, and Studio Commercials.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       GLOBAL STICKY HEADER
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo" aria-label="Vermillion Frames Home">
+        <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="44" height="44">
+        <div class="logo-text-group">
+          <span class="logo-brand-title">VERMILLION <span class="logo-brand-accent">FRAMES</span></span>
+          <span class="logo-brand-tagline">"Straight From Our Vision to Your Screen"</span>
+        </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="work.html" class="nav-link active">Work</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+        <button class="mobile-menu-btn" aria-label="Open mobile menu">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="header-logo" style="padding: 0;">
+          <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="38" height="38">
+          <div class="logo-text-group">
+            <span class="logo-brand-title" style="font-size: 1rem;">VERMILLION <span class="logo-brand-accent">FRAMES</span></span>
+            <span class="logo-brand-tagline" style="font-size: 0.52rem;">"Straight From Our Vision to Your Screen"</span>
+          </div>
+        </a>
+        <button class="drawer-close-btn modal-close-btn" aria-label="Close menu">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html" class="active">Work &amp; Case Studies</a>
+        <a href="process.html">Process</a>
+        <a href="about.html">About Studio</a>
+        <a href="pricing.html">Pricing &amp; Sprints</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Strategy Call</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         PORTFOLIO HEADER & FILTERS
+         ========================================================================= -->
+    <section class="section section-subtle" style="padding-top: 3.5rem; padding-bottom: 3rem; border-bottom: 1px solid var(--border-light);">
+      <div class="container container-narrow" style="text-align: center;">
+        <div class="eyebrow">Direct-Response Archive</div>
+        <h1 style="margin-bottom: 1rem;">Performance Campaigns That Scaled Ad Accounts</h1>
+        <p class="subtitle" style="margin-bottom: 2rem;">
+          Over 10,000+ direct-response video creatives delivered for hyper-growth brands. Filter by creative format to inspect winning hooks and performance metrics.
+        </p>
+
+        <!-- Live Category Filter Buttons -->
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem;">
+          <button class="btn btn-secondary btn-sm filter-btn active" data-filter="all">All Creatives (100+)</button>
+          <button class="btn btn-secondary btn-sm filter-btn" data-filter="ugc">UGC Ads</button>
+          <button class="btn btn-secondary btn-sm filter-btn" data-filter="ai">AI-Avatar Ads</button>
+          <button class="btn btn-secondary btn-sm filter-btn" data-filter="meta">Meta / TikTok Social</button>
+          <button class="btn btn-secondary btn-sm filter-btn" data-filter="commercial">Studio Commercials</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         FILTERABLE WORK GRID
+         ========================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid-3" id="portfolioGrid">
+
+          <!-- Card 1: Levi's -->
+          <article class="case-study-card" data-category="ugc meta">
+            <div class="case-thumbnail" data-video-trigger data-title="Levi's Direct-Response UGC Campaign" data-client="Levi's" data-metric="3.8x ROAS • +44% 3s Hold Rate">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1f1f1f 0%, #30100d 100%); display: flex; align-items: center; justify-content: center;">
+                <svg style="width: 90px; height: 32px;"><use href="assets/images/clients.svg#client-levis"></use></svg>
+                <div class="case-platform-tag">Meta Ads &bull; UGC</div>
+                <div class="case-overlay-play"><div class="case-play-btn"><svg class="icon"><use href="assets/icons/icons.svg#icon-play"></use></svg></div></div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-client">Levi's</div>
+              <h3 class="case-title">D2C Denim Conversion Sprint</h3>
+              <p style="font-size: 0.875rem; color: var(--gray-700); margin-bottom: 1rem;">
+                Tackled denim sizing hesitation through 12 creator fit reviews. Generated 44% higher hook rate and 3.8x blended ROAS.
+              </p>
+              <div class="case-metrics-grid">
+                <div class="case-metric-item"><div class="case-metric-val highlight">3.8x</div><div class="case-metric-lbl">ROAS</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">+44%</div><div class="case-metric-lbl">Hook Rate</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">-28%</div><div class="case-metric-lbl">CAC</div></div>
+              </div>
+              <a href="case-study-detail.html" class="service-link">View Deep-Dive <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+            </div>
+          </article>
+
+          <!-- Card 2: ZingBus -->
+          <article class="case-study-card" data-category="meta commercial">
+            <div class="case-thumbnail" data-video-trigger data-title="ZingBus Travel App User Acquisition" data-client="ZingBus" data-metric="3.4x ROAS • 18k App Installs">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1c1a17 0%, #2f190e 100%); display: flex; align-items: center; justify-content: center;">
+                <svg style="width: 100px; height: 32px;"><use href="assets/images/clients.svg#client-zingbus"></use></svg>
+                <div class="case-platform-tag">Meta &bull; Real Human</div>
+                <div class="case-overlay-play"><div class="case-play-btn"><svg class="icon"><use href="assets/icons/icons.svg#icon-play"></use></svg></div></div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-client">ZingBus</div>
+              <h3 class="case-title">Travel App Booking Growth</h3>
+              <p style="font-size: 0.875rem; color: var(--gray-700); margin-bottom: 1rem;">
+                Split-screen comparison creative between cramped standard buses vs ZingBus premium lounge comfort.
+              </p>
+              <div class="case-metrics-grid">
+                <div class="case-metric-item"><div class="case-metric-val highlight">3.4x</div><div class="case-metric-lbl">ROAS</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">18,500+</div><div class="case-metric-lbl">Bookings</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">-35%</div><div class="case-metric-lbl">CPL</div></div>
+              </div>
+              <a href="case-study-detail.html" class="service-link">View Deep-Dive <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+            </div>
+          </article>
+
+          <!-- Card 3: Unacademy -->
+          <article class="case-study-card" data-category="ugc meta">
+            <div class="case-thumbnail" data-video-trigger data-title="Unacademy Test Prep Subscription Sprint" data-client="Unacademy" data-metric="4.1x ROAS • +52% CTR">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #111e1b 0%, #1c261e 100%); display: flex; align-items: center; justify-content: center;">
+                <svg style="width: 120px; height: 32px;"><use href="assets/images/clients.svg#client-unacademy"></use></svg>
+                <div class="case-platform-tag">YouTube Shorts &bull; UGC</div>
+                <div class="case-overlay-play"><div class="case-play-btn"><svg class="icon"><use href="assets/icons/icons.svg#icon-play"></use></svg></div></div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-client">Unacademy</div>
+              <h3 class="case-title">EdTech Subscription Sprints</h3>
+              <p style="font-size: 0.875rem; color: var(--gray-700); margin-bottom: 1rem;">
+                Relatable aspirant story ads with strong urgency hooks that generated over 25,000 course enrollments.
+              </p>
+              <div class="case-metrics-grid">
+                <div class="case-metric-item"><div class="case-metric-val highlight">4.1x</div><div class="case-metric-lbl">ROAS</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">+52%</div><div class="case-metric-lbl">CTR</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">25k+</div><div class="case-metric-lbl">Signups</div></div>
+              </div>
+              <a href="case-study-detail.html" class="service-link">View Deep-Dive <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+            </div>
+          </article>
+
+          <!-- Card 4: SEEKHO -->
+          <article class="case-study-card" data-category="ai meta">
+            <div class="case-thumbnail" data-video-trigger data-title="SEEKHO Rapid AI Avatar Localization" data-client="SEEKHO" data-metric="3.6x ROAS • 48h Turnaround">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #1f1111 0%, #2f1a1a 100%); display: flex; align-items: center; justify-content: center;">
+                <svg style="width: 110px; height: 32px;"><use href="assets/images/clients.svg#client-seekho"></use></svg>
+                <div class="case-platform-tag">TikTok &amp; Reels &bull; AI Avatars</div>
+                <div class="case-overlay-play"><div class="case-play-btn"><svg class="icon"><use href="assets/icons/icons.svg#icon-play"></use></svg></div></div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-client">SEEKHO</div>
+              <h3 class="case-title">Micro-Learning Skill Platform</h3>
+              <p style="font-size: 0.875rem; color: var(--gray-700); margin-bottom: 1rem;">
+                Deployed 30+ multilingual AI-avatar video hooks testing salary negotiation, coding tricks, and career hacks.
+              </p>
+              <div class="case-metrics-grid">
+                <div class="case-metric-item"><div class="case-metric-val highlight">3.6x</div><div class="case-metric-lbl">ROAS</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">&lt;48h</div><div class="case-metric-lbl">Sprint Time</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">-41%</div><div class="case-metric-lbl">CPI</div></div>
+              </div>
+              <a href="case-study-detail.html" class="service-link">View Deep-Dive <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+            </div>
+          </article>
+
+          <!-- Card 5: Astrotalk -->
+          <article class="case-study-card" data-category="ugc meta">
+            <div class="case-thumbnail" data-video-trigger data-title="Astrotalk Viral Hook Testing" data-client="Astrotalk" data-metric="3.9x ROAS • +61% Retention">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #241d08 0%, #151105 100%); display: flex; align-items: center; justify-content: center;">
+                <svg style="width: 110px; height: 32px;"><use href="assets/images/clients.svg#client-astrotalk"></use></svg>
+                <div class="case-platform-tag">Meta Ads &bull; UGC</div>
+                <div class="case-overlay-play"><div class="case-play-btn"><svg class="icon"><use href="assets/icons/icons.svg#icon-play"></use></svg></div></div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-client">Astrotalk</div>
+              <h3 class="case-title">High-Retention Consultation Ads</h3>
+              <p style="font-size: 0.875rem; color: var(--gray-700); margin-bottom: 1rem;">
+                Curiosity loop hooks testing relationship queries and first-call free consultations, generating massive first-time wallet recharges.
+              </p>
+              <div class="case-metrics-grid">
+                <div class="case-metric-item"><div class="case-metric-val highlight">3.9x</div><div class="case-metric-lbl">ROAS</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">+61%</div><div class="case-metric-lbl">Hold Rate</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">$280k+</div><div class="case-metric-lbl">Spend Scaled</div></div>
+              </div>
+              <a href="case-study-detail.html" class="service-link">View Deep-Dive <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+            </div>
+          </article>
+
+          <!-- Card 6: Studio D2C Wellness -->
+          <article class="case-study-card" data-category="commercial meta">
+            <div class="case-thumbnail" data-video-trigger data-title="D2C Wellness Studio Commercial" data-client="Aura Skincare" data-metric="3.2x ROAS • Premium Brand Staging">
+              <div style="width: 100%; height: 100%; background: linear-gradient(135deg, #22141a 0%, #15090f 100%); display: flex; align-items: center; justify-content: center;">
+                <span style="font-size: 1.25rem; font-weight: 700; color: #FFF; letter-spacing: 2px;">AURA WELLNESS</span>
+                <div class="case-platform-tag">Cinema Studio &bull; Real Human</div>
+                <div class="case-overlay-play"><div class="case-play-btn"><svg class="icon"><use href="assets/icons/icons.svg#icon-play"></use></svg></div></div>
+              </div>
+            </div>
+            <div class="case-body">
+              <div class="case-client">Aura Skincare</div>
+              <h3 class="case-title">Hydration Serum Studio Launch</h3>
+              <p style="font-size: 0.875rem; color: var(--gray-700); margin-bottom: 1rem;">
+                High-speed macro liquid textures combined with dermatologist authority proof points to drive premium conversion.
+              </p>
+              <div class="case-metrics-grid">
+                <div class="case-metric-item"><div class="case-metric-val highlight">3.2x</div><div class="case-metric-lbl">ROAS</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">+38%</div><div class="case-metric-lbl">AOV</div></div>
+                <div class="case-metric-item"><div class="case-metric-val">120k+</div><div class="case-metric-lbl">Units Sold</div></div>
+              </div>
+              <a href="case-study-detail.html" class="service-link">View Deep-Dive <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg></a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         CALLOUT
+         ========================================================================= -->
+    <section class="section section-dark dark-section">
+      <div class="container container-narrow" style="text-align: center;">
+        <h2>Ready To Turn Creative Into Your Primary Growth Lever?</h2>
+        <p class="subtitle" style="color: var(--text-inverse-muted); margin-bottom: 2rem;">
+          Stop guessing which video will work. Let us deploy a 12-variation testing sprint tailored for your ad account.
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          Book Your 20-Min Strategy Call
+          <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="video-modal" role="dialog" aria-modal="true" aria-labelledby="modalVideoTitle">
+    <div class="modal-content-box">
+      <div class="modal-header-bar">
+        <div>
+          <span id="modalVideoClient" style="font-size: 0.75rem; color: #E85D4E; font-weight: 700; text-transform: uppercase;">Client Case Study</span>
+          <h3 id="modalVideoTitle" style="font-size: 1.1rem; color: #FFF; margin-top: 2px;">Campaign Video Reel</h3>
+        </div>
+        <button class="modal-close-btn" aria-label="Close video player"><svg class="icon"><use href="assets/icons/icons.svg#icon-close"></use></svg></button>
+      </div>
+      <div class="modal-video-display">
+        <div style="text-align: center; color: #FFF; padding: 2rem;">
+          <div style="width: 72px; height: 72px; border-radius: 50%; background-color: var(--red-primary); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; box-shadow: 0 0 0 10px rgba(168,46,31,0.3);">
+            <svg class="icon-lg" style="margin-left: 4px;"><use href="assets/icons/icons.svg#icon-play"></use></svg>
+          </div>
+          <p id="modalVideoMetric" style="font-size: 1.1rem; font-weight: 600; color: #FFA499;">3.8x ROAS • +44% 3s Hold Rate</p>
+          <p style="font-size: 0.8rem; color: var(--text-inverse-muted); margin-top: 0.5rem;">
+            Full 9:16 Direct-Response Master Reel &bull; 1080&times;1920 Pro Video Stream
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="header-logo" style="padding: 0; margin-bottom: 1rem;">
+            <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="44" height="44">
+            <div class="logo-text-group">
+              <span class="logo-brand-title" style="color: #FFFFFF;">VERMILLION <span class="logo-brand-accent" style="color: #E85D4E;">FRAMES</span></span>
+              <span class="logo-brand-tagline" style="color: #FFA499;">"Straight From Our Vision to Your Screen"</span>
+            </div>
+          </a>
+          <p>Performance-driven video ad studio for growth marketers, media buyers, and D2C founders.</p>
+          <p style="font-size: 0.75rem; color: var(--text-inverse-subtle); margin-top: 1rem;">
+            "Straight From Our Vision to Your Screen"
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Capabilities</h4>
+          <nav class="footer-nav">
+            <a href="services-ugc.html">UGC Video Ads</a>
+            <a href="services.html">AI-Avatar Video Ads</a>
+            <a href="services.html">Meta &amp; TikTok Paid Social</a>
+            <a href="services.html">Studio Real-Human Ads</a>
+            <a href="services.html">Direct-Response Scripts</a>
+            <a href="process.html">Creative Testing Matrix</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <nav class="footer-nav">
+            <a href="work.html">Case Studies &amp; Work</a>
+            <a href="process.html">5-Step Methodology</a>
+            <a href="about.html">About &amp; Brand Pillars</a>
+            <a href="pricing.html">Pricing &amp; Sprints</a>
+            <a href="contact.html">Contact &amp; Brief</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Get in Touch</h4>
+          <p style="font-size: 0.875rem; color: var(--text-inverse-muted); margin-bottom: 1rem;">Ready to scale performance creative?</p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="width: 100%;">Submit a Creative Brief</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vermillion Frames. All rights reserved. &bull; Developer: Rituraj Shukla</div>
+        <div class="footer-tagline">"Straight From Our Vision to Your Screen"</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
