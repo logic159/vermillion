@@ -1,160 +1,289 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | VERMILLION</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        vermillion: '#E34234',
-                        dark: '#0a0a0a',
-                        card: '#111111'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+  <!-- Developer: Rituraj Shukla -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact &amp; Creative Brief | Vermillion Frames</title>
+  <meta name="description" content="Book a 20-minute performance creative strategy session or submit your video ad brief. Fast response within 2 hours.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css?v=3.0">
 </head>
+<body>
 
-<body class="bg-black text-white antialiased">
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass-nav border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">VERMILLION</a>
-                </div>
-                <!-- Desktop Menu -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
-                        <a href="services.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
-                        <a href="portfolio.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Work</a>
-                        <a href="contact.html"
-                            class="text-white hover:text-vermillion px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Contact</a>
-                    </div>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="-mr-2 flex md:hidden">
-                    <button id="mobile-menu-button" type="button"
-                        class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+  <!-- =========================================================================
+       GLOBAL STICKY HEADER
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo" aria-label="Vermillion Frames Home">
+        <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="44" height="44">
+        <div class="logo-text-group">
+          <span class="logo-brand-title">VERMILLION <span class="logo-brand-accent">FRAMES</span></span>
+          <span class="logo-brand-tagline">"Straight From Our Vision to Your Screen"</span>
         </div>
-        <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-black/95 backdrop-blur-xl absolute w-full" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-b border-white/10">
-                <a href="index.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="services.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="portfolio.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work</a>
-                <a href="contact.html" class="text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-            </div>
-        </div>
-    </nav>
+      </a>
 
-    <!-- Header -->
-    <header class="pt-40 pb-20 px-4 sm:px-6 lg:px-8 text-center max-w-7xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-on-scroll">Get in Touch</h1>
-        <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto animate-on-scroll delay-100">
-            Let’s create high-converting ads together.
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+        <button class="mobile-menu-btn" aria-label="Open mobile menu">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="header-logo" style="padding: 0;">
+          <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="38" height="38">
+          <div class="logo-text-group">
+            <span class="logo-brand-title" style="font-size: 1rem;">VERMILLION <span class="logo-brand-accent">FRAMES</span></span>
+            <span class="logo-brand-tagline" style="font-size: 0.52rem;">"Straight From Our Vision to Your Screen"</span>
+          </div>
+        </a>
+        <button class="drawer-close-btn modal-close-btn" aria-label="Close menu">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work &amp; Case Studies</a>
+        <a href="process.html">Process</a>
+        <a href="about.html">About Studio</a>
+        <a href="pricing.html">Pricing &amp; Sprints</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Strategy Call</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         CONTACT HERO
+         ========================================================================= -->
+    <section class="section section-subtle" style="padding-top: 3.5rem; padding-bottom: 3.5rem; border-bottom: 1px solid var(--border-light);">
+      <div class="container container-narrow" style="text-align: center;">
+        <div class="eyebrow">Direct Growth Partner</div>
+        <h1 style="margin-bottom: 1rem;">Let's Build High-Converting Ads For Your Brand</h1>
+        <p class="subtitle">
+          Submit your brief below or select a time on our strategy calendar. We respond to all qualified briefs within 2 hours.
         </p>
-    </header>
+      </div>
+    </section>
 
-    <!-- Contact Form -->
-    <main class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 pb-32 animate-on-scroll delay-200">
-        <div class="bg-[#111] p-8 md:p-12 rounded-3xl border border-white/10 shadow-2xl">
-            <form action="#" method="POST" class="space-y-6">
-                <div>
-                    <label for="name" class="block text-sm font-medium text-gray-400 mb-2">Name</label>
-                    <input type="text" id="name" name="name"
-                        class="w-full bg-[#050505] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-vermillion transition-colors"
-                        placeholder="John Doe">
-                </div>
+    <!-- =========================================================================
+         CONTACT & BRIEF FORM / CALENDAR
+         ========================================================================= -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+          
+          <!-- Column 1: Creative Brief Form -->
+          <div class="card-box">
+            <h2 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Submit Creative Brief</h2>
+            <p style="font-size: 0.875rem; color: var(--gray-700); margin-bottom: 2rem;">
+              Tell us about your brand goals and current creative bottlenecks.
+            </p>
 
-                <div>
-                    <label for="brand" class="block text-sm font-medium text-gray-400 mb-2">Brand Name</label>
-                    <input type="text" id="brand" name="brand"
-                        class="w-full bg-[#050505] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-vermillion transition-colors"
-                        placeholder="Your Brand">
-                </div>
-
-                <div>
-                    <label for="email" class="block text-sm font-medium text-gray-400 mb-2">Email</label>
-                    <input type="email" id="email" name="email"
-                        class="w-full bg-[#050505] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-vermillion transition-colors"
-                        placeholder="john@example.com">
-                </div>
-
-                <div>
-                    <label for="budget" class="block text-sm font-medium text-gray-400 mb-2">Budget (Optional)</label>
-                    <select id="budget" name="budget"
-                        class="w-full bg-[#050505] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-vermillion transition-colors appearance-none">
-                        <option value="" disabled selected>Select a range</option>
-                        <option value="1-5k">$1k - $5k</option>
-                        <option value="5-10k">$5k - $10k</option>
-                        <option value="10k+">$10k+</option>
-                    </select>
-                </div>
-
-                <div>
-                    <label for="message" class="block text-sm font-medium text-gray-400 mb-2">Message</label>
-                    <textarea id="message" name="message" rows="4"
-                        class="w-full bg-[#050505] border border-white/10 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-vermillion transition-colors"
-                        placeholder="Tell us about your project..."></textarea>
-                </div>
-
-                <div class="pt-4">
-                    <button type="button"
-                        class="w-full bg-white text-black font-bold py-4 rounded-lg hover:bg-gray-200 transition-colors">Send
-                        Message</button>
-                    <!-- Disclaimer -->
-                    <p class="text-xs text-center text-gray-500 mt-4">This form is a demo placeholder.</p>
-                </div>
-            </form>
-        </div>
-
-        <div class="mt-16 text-center space-y-4">
-            <h3 class="text-xl font-bold">Contact Info</h3>
-            <p class="text-gray-400">hello@vermillion.agency</p>
-            <p class="text-gray-400">+1 (555) 123-4567</p>
-            <div class="flex justify-center space-x-6 pt-4">
-                <!-- Social Icons -->
-                <a href="#" class="text-gray-500 hover:text-white transition-colors">Instagram</a>
-                <a href="#" class="text-gray-500 hover:text-white transition-colors">LinkedIn</a>
-                <a href="#" class="text-gray-500 hover:text-white transition-colors">Twitter</a>
+            <!-- Success State Message -->
+            <div id="formSuccessMessage" style="display: none; background-color: var(--success-subtle); border: 1px solid var(--success-green); border-radius: var(--radius-sm); padding: 1.25rem; margin-bottom: 1.5rem; color: #065F46;">
+              <h4 style="color: #065F46; font-size: 1rem; margin-bottom: 0.25rem;">Brief Received Successfully!</h4>
+              <p style="font-size: 0.85rem; margin-bottom: 0;">
+                Our Creative Director is reviewing your ad account details. We will email your tailored 3-concept testing plan within 2 hours.
+              </p>
             </div>
-        </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="bg-[#050505] border-t border-white/10 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left text-sm text-gray-600">
-            &copy; 2026 Vermillion. All rights reserved.
+            <form id="creativeBriefForm" novalidate>
+              <div class="form-group">
+                <label class="form-label" for="fullName">Full Name *</label>
+                <input type="text" id="fullName" class="form-control" placeholder="e.g. Sarah Jenkins" required>
+                <span class="form-error-msg">Please enter your full name.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="workEmail">Work Email *</label>
+                <input type="email" id="workEmail" class="form-control" placeholder="sarah@yourbrand.com" required>
+                <span class="form-error-msg">Please enter a valid work email.</span>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="companyName">Brand / Company Name &amp; Website *</label>
+                <input type="text" id="companyName" class="form-control" placeholder="Brand Name (e.g. Levi's / www.yourbrand.com)" required>
+                <span class="form-error-msg">Please enter your brand name or website.</span>
+              </div>
+
+              <!-- Monthly Ad Spend Selector -->
+              <div class="form-group">
+                <label class="form-label">Estimated Monthly Ad Spend</label>
+                <input type="hidden" id="selectedBudget" value="$10k - $50k">
+                <div class="budget-options-grid">
+                  <button type="button" class="budget-btn" data-budget="<$10k">&lt; $10k/mo</button>
+                  <button type="button" class="budget-btn selected" data-budget="$10k - $50k">$10k &ndash; $50k</button>
+                  <button type="button" class="budget-btn" data-budget="$50k - $150k">$50k &ndash; $150k</button>
+                  <button type="button" class="budget-btn" data-budget="$150k+">$150k+/mo</button>
+                </div>
+              </div>
+
+              <!-- Format checkboxes -->
+              <div class="form-group">
+                <label class="form-label">Formats Needed</label>
+                <div class="formats-checkbox-grid">
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="formats" value="ugc" checked> UGC Video Ads
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="formats" value="ai"> AI-Avatar Ads
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="formats" value="meta" checked> Meta &amp; TikTok Paid Social
+                  </label>
+                  <label class="checkbox-label">
+                    <input type="checkbox" name="formats" value="studio"> Studio Commercials
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-top: 1.5rem;">
+                <label class="form-label" for="projectBrief">Project Brief &amp; Target CPA *</label>
+                <textarea id="projectBrief" class="form-control" rows="4" placeholder="Tell us about your product, target audience, current ROAS or CPA targets, and any specific angles you'd like to test." required></textarea>
+                <span class="form-error-msg">Please provide at least a brief summary (minimum 10 characters).</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-lg" style="width: 100%; margin-top: 1rem;">
+                Submit Brief &amp; Request Strategy Plan
+                <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+              </button>
+            </form>
+          </div>
+
+          <!-- Column 2: Direct Calendar Booking Placeholder & Studio Contact -->
+          <div>
+            <div class="card-box-dark" style="margin-bottom: 2rem;">
+              <span class="eyebrow" style="background: rgba(168,46,31,0.2); border-color: rgba(168,46,31,0.4); color: #FFA499; margin-bottom: 0.75rem;">Instant Scheduling</span>
+              <h3 style="color: #FFF; font-size: 1.4rem; margin-bottom: 0.75rem;">Schedule a 20-Min Creative Strategy Call</h3>
+              <p style="font-size: 0.875rem; color: var(--text-inverse-muted); margin-bottom: 1.5rem;">
+                Prefer to talk directly with a Creative Director? Pick a time slot on our calendar for a live 1-on-1 ad account audit.
+              </p>
+
+              <!-- Interactive Simulated Calendar Booking Widget -->
+              <div style="background-color: var(--bg-dark-card); border: 1px solid var(--border-dark); border-radius: var(--radius-md); padding: 1.25rem; text-align: center;">
+                <div style="display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--border-dark); padding-bottom: 1rem; margin-bottom: 1.25rem;">
+                  <span style="font-weight: 600; font-size: 0.9rem;">Available Sprint Slots</span>
+                  <span style="font-size: 0.75rem; color: var(--success-green); font-weight: 600;">● 3 Open Slots</span>
+                </div>
+
+                <div class="calendar-slots-grid">
+                  <button type="button" class="calendar-slot-btn">Tomorrow<br><strong>10:00 AM</strong></button>
+                  <button type="button" class="calendar-slot-btn">Tomorrow<br><strong>02:30 PM</strong></button>
+                  <button type="button" class="calendar-slot-btn">Wednesday<br><strong>11:00 AM</strong></button>
+                </div>
+
+                <a href="#creativeBriefForm" class="btn btn-primary btn-sm" style="width: 100%;">
+                  Select Time &amp; Lock Strategy Call
+                </a>
+              </div>
+            </div>
+
+            <!-- Direct Studio Details -->
+            <div style="background-color: var(--bg-light); border: 1px solid var(--border-light); border-radius: var(--radius-md); padding: 1.75rem;">
+              <h4 style="font-size: 1.05rem; margin-bottom: 1rem;">Direct Studio Contacts</h4>
+              <div style="display: flex; flex-direction: column; gap: 0.85rem; font-size: 0.875rem; color: var(--gray-900);">
+                <div>
+                  <strong>Direct Inquiries:</strong><br>
+                  <span style="color: var(--red-primary); font-weight: 600;">contact@vermillionframes.com</span>
+                </div>
+                <div>
+                  <strong>Guaranteed SLA:</strong><br>
+                  <span style="color: var(--gray-700);">Response time under 2 business hours for growth briefs.</span>
+                </div>
+                <div>
+                  <strong>Operating Worldwide:</strong><br>
+                  <span style="color: var(--gray-700);">Remote Creator Network &bull; Global Studio Capabilities</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
-    </footer>
-    <script src="js/main.js"></script>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="header-logo" style="padding: 0; margin-bottom: 1rem;">
+            <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="44" height="44">
+            <div class="logo-text-group">
+              <span class="logo-brand-title" style="color: #FFFFFF;">VERMILLION <span class="logo-brand-accent" style="color: #E85D4E;">FRAMES</span></span>
+              <span class="logo-brand-tagline" style="color: #FFA499;">"Straight From Our Vision to Your Screen"</span>
+            </div>
+          </a>
+          <p>Performance-driven video ad studio for growth marketers, media buyers, and D2C founders.</p>
+          <p style="font-size: 0.75rem; color: var(--text-inverse-subtle); margin-top: 1rem;">
+            "Straight From Our Vision to Your Screen"
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Capabilities</h4>
+          <nav class="footer-nav">
+            <a href="services-ugc.html">UGC Video Ads</a>
+            <a href="services.html">AI-Avatar Video Ads</a>
+            <a href="services.html">Meta &amp; TikTok Paid Social</a>
+            <a href="services.html">Studio Real-Human Ads</a>
+            <a href="services.html">Direct-Response Scripts</a>
+            <a href="process.html">Creative Testing Matrix</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <nav class="footer-nav">
+            <a href="work.html">Case Studies &amp; Work</a>
+            <a href="process.html">5-Step Methodology</a>
+            <a href="about.html">About &amp; Brand Pillars</a>
+            <a href="pricing.html">Pricing &amp; Sprints</a>
+            <a href="contact.html">Contact &amp; Brief</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Get in Touch</h4>
+          <p style="font-size: 0.875rem; color: var(--text-inverse-muted); margin-bottom: 1rem;">Ready to scale performance creative?</p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="width: 100%;">Submit a Creative Brief</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vermillion Frames. All rights reserved. &bull; Developer: Rituraj Shukla</div>
+        <div class="footer-tagline">"Straight From Our Vision to Your Screen"</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>

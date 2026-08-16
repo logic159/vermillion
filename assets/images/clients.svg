@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <!-- Developer: Rituraj Shukla -->
+  <!-- Client Logos (Monochrome / High Contrast for Proof Bar) -->
+  
+  <!-- Levi's Batwing Logo -->
+  <symbol id="client-levis" viewBox="0 0 160 60">
+    <path fill="#A82E1F" d="M 10 15 C 35 15, 60 22, 80 28 C 100 22, 125 15, 150 15 L 140 48 C 120 48, 95 44, 80 38 C 65 44, 40 48, 20 48 Z" />
+    <text x="80" y="38" font-family="'Impact', 'Helvetica Neue', sans-serif" font-weight="900" font-size="22" fill="#FFFFFF" text-anchor="middle" letter-spacing="1">Levi's</text>
+  </symbol>
+
+  <!-- Unacademy -->
+  <symbol id="client-unacademy" viewBox="0 0 180 50">
+    <g transform="translate(10, 8)">
+      <path d="M 0 18 C 0 8, 8 0, 18 0 C 28 0, 36 8, 36 18 L 28 18 C 28 12, 23 7, 18 7 C 13 7, 8 12, 8 18 Z" fill="#08BD80" />
+      <path d="M 6 22 C 6 28, 11 33, 18 33 C 25 33, 30 28, 30 22 L 38 22 C 38 32, 29 41, 18 41 C 7 41, -2 32, -2 22 Z" fill="#1C3879" />
+    </g>
+    <text x="56" y="32" font-family="'Poppins', sans-serif" font-weight="700" font-size="18" fill="currentColor" letter-spacing="0.5">unacademy</text>
+  </symbol>
+
+  <!-- SEEKHO -->
+  <symbol id="client-seekho" viewBox="0 0 160 50">
+    <rect x="10" y="10" width="30" height="30" rx="8" fill="#A82E1F" />
+    <path d="M 20 25 L 30 18 L 30 32 Z" fill="#FFFFFF" />
+    <text x="48" y="32" font-family="'Poppins', sans-serif" font-weight="800" font-size="20" fill="currentColor" letter-spacing="2">SEEKHO</text>
+  </symbol>
+
+  <!-- ZingBus -->
+  <symbol id="client-zingbus" viewBox="0 0 160 50">
+    <circle cx="24" cy="25" r="14" fill="#FF5722" />
+    <path d="M 18 20 L 30 20 L 22 26 L 30 31 L 18 31" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" />
+    <text x="46" y="31" font-family="'Poppins', sans-serif" font-weight="800" font-size="18" fill="currentColor" letter-spacing="1">zing<tspan fill="#FF5722">bus</tspan></text>
+  </symbol>
+
+  <!-- Astrotalk -->
+  <symbol id="client-astrotalk" viewBox="0 0 170 50">
+    <circle cx="22" cy="25" r="13" fill="#FFC107" />
+    <polygon points="22 14 24.5 21 32 21 26 25.5 28.5 33 22 28.5 15.5 33 18 25.5 12 21 19.5 21" fill="#111111" />
+    <text x="44" y="32" font-family="'Poppins', sans-serif" font-weight="700" font-size="18" fill="currentColor" letter-spacing="0.5">astrotalk</text>
+  </symbol>
+</svg>

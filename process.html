@@ -1,176 +1,262 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Process | VERMILLION</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        vermillion: '#E34234',
-                        dark: '#0a0a0a',
-                        card: '#111111'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+  <!-- Developer: Rituraj Shukla -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our 5-Step Performance Methodology | Vermillion Frames</title>
+  <meta name="description" content="Explore the 5-step creative testing engine behind 10,000+ high-converting video ads. From discovery audit to 48-hour iteration sprints.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body class="bg-black text-white antialiased">
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass-nav border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">VERMILLION</a>
-                </div>
-                <!-- Desktop Menu -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
-                        <a href="services.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
-                        <a href="portfolio.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Work</a>
-                        <a href="contact.html"
-                            class="bg-white text-black hover:bg-gray-200 px-5 py-2 rounded-full text-sm font-medium transition-all duration-300">Book
-                            a Call</a>
-                    </div>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="-mr-2 flex md:hidden">
-                    <button id="mobile-menu-button" type="button"
-                        class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+  <!-- =========================================================================
+       GLOBAL STICKY HEADER
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo" aria-label="Vermillion Frames Home">
+        <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="44" height="44">
+        <div class="logo-text-group">
+          <span class="logo-brand-title">VERMILLION <span class="logo-brand-accent">FRAMES</span></span>
+          <span class="logo-brand-tagline">"Straight From Our Vision to Your Screen"</span>
         </div>
-        <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-black/95 backdrop-blur-xl absolute w-full" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-b border-white/10">
-                <a href="index.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="services.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="portfolio.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work</a>
-                <a href="contact.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-            </div>
-        </div>
-    </nav>
+      </a>
 
-    <!-- Header -->
-    <header class="pt-40 pb-20 px-4 sm:px-6 lg:px-8 text-center max-w-7xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-on-scroll">How We Work</h1>
-        <p class="text-gray-400 text-lg md:text-xl max-w-3xl mx-auto animate-on-scroll delay-100">
-            A streamlined workflow designed for speed, quality, and performance.
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="process.html" class="nav-link active">Process</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+        <button class="mobile-menu-btn" aria-label="Open mobile menu">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="header-logo" style="padding: 0;">
+          <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="38" height="38">
+          <div class="logo-text-group">
+            <span class="logo-brand-title" style="font-size: 1rem;">VERMILLION <span class="logo-brand-accent">FRAMES</span></span>
+            <span class="logo-brand-tagline" style="font-size: 0.52rem;">"Straight From Our Vision to Your Screen"</span>
+          </div>
+        </a>
+        <button class="drawer-close-btn modal-close-btn" aria-label="Close menu">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work &amp; Case Studies</a>
+        <a href="process.html" class="active">Process</a>
+        <a href="about.html">About Studio</a>
+        <a href="pricing.html">Pricing &amp; Sprints</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Strategy Call</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         PROCESS HERO
+         ========================================================================= -->
+    <section class="section section-subtle" style="padding-top: 3.5rem; padding-bottom: 3.5rem; border-bottom: 1px solid var(--border-light);">
+      <div class="container container-narrow" style="text-align: center;">
+        <div class="eyebrow">The Performance Framework</div>
+        <h1 style="margin-bottom: 1rem;">The 5-Step Creative Engine Built For Velocity</h1>
+        <p class="subtitle">
+          How we take growth brands from creative audit to live winning video ads without endless meetings or production bottlenecks.
         </p>
-    </header>
+      </div>
+    </section>
 
-    <!-- Visual Process Flow -->
-    <main class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
-        <div class="relative">
-            <!-- Vertical Line (Desktop only) -->
-            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-px bg-white/10">
+    <!-- =========================================================================
+         DETAILED 5 STEPS
+         ========================================================================= -->
+    <section class="section">
+      <div class="container container-narrow">
+        
+        <!-- Step 1 -->
+        <div style="display: flex; gap: 2rem; margin-bottom: 4rem; position: relative;">
+          <div style="flex-shrink: 0; width: 56px; height: 56px; border-radius: var(--radius-md); background-color: var(--red-primary); color: #FFF; font-size: 1.25rem; font-weight: 700; display: flex; align-items: center; justify-content: center;">
+            01
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.5rem;">Discovery &amp; Audit</span>
+            <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">Ad Account &amp; Customer Objection Mining</h2>
+            <p style="color: var(--gray-700); line-height: 1.65; margin-bottom: 1rem;">
+              We start by reviewing your historical ad account performance, top-spending creatives, drop-off timecodes, customer reviews, and competitor ads. We identify exactly why past ads succeeded or failed and pinpoint high-converting angles.
+            </p>
+            <div style="background-color: var(--bg-light); border-radius: var(--radius-sm); padding: 1rem; font-size: 0.875rem; color: var(--gray-900); border-left: 3px solid var(--red-primary);">
+              <strong>Deliverable:</strong> Creative Audit Sheet + Angle Opportunities Matrix within 48 hours of onboarding.
             </div>
-
-            <!-- Step 1 -->
-            <div class="group relative flex flex-col md:flex-row items-center justify-between mb-24 animate-on-scroll">
-                <div class="w-full md:w-5/12 text-center md:text-right md:pr-12 mb-8 md:mb-0">
-                    <h3 class="text-2xl font-bold mb-2">Strategy & Concept</h3>
-                    <p class="text-gray-400">We analyze your brand, competitors, and goals to define the creative
-                        direction.</p>
-                </div>
-                <div
-                    class="z-10 w-12 h-12 rounded-full bg-vermillion border-4 border-black flex items-center justify-center font-bold text-white shadow-[0_0_20px_rgba(227,66,52,0.5)]">
-                    1</div>
-                <div class="w-full md:w-5/12 md:pl-12 opacity-50 group-hover:opacity-100 transition-opacity">
-                    <div class="h-40 bg-white/5 rounded-2xl flex items-center justify-center">
-                        <span class="text-4xl">🧠</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Step 2 -->
-            <div
-                class="group relative flex flex-col md:flex-row-reverse items-center justify-between mb-24 animate-on-scroll delay-100">
-                <div class="w-full md:w-5/12 text-center md:text-left md:pl-12 mb-8 md:mb-0">
-                    <h3 class="text-2xl font-bold mb-2">Script & Pre-Production</h3>
-                    <p class="text-gray-400">Our copywriters craft hook-driven scripts, and we handle casting and
-                        logistics.</p>
-                </div>
-                <div
-                    class="z-10 w-12 h-12 rounded-full bg-vermillion border-4 border-black flex items-center justify-center font-bold text-white shadow-[0_0_20px_rgba(227,66,52,0.5)]">
-                    2</div>
-                <div class="w-full md:w-5/12 md:pr-12 opacity-50 group-hover:opacity-100 transition-opacity">
-                    <div class="h-40 bg-white/5 rounded-2xl flex items-center justify-center">
-                        <span class="text-4xl">📝</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Step 3 -->
-            <div
-                class="group relative flex flex-col md:flex-row items-center justify-between mb-24 animate-on-scroll delay-200">
-                <div class="w-full md:w-5/12 text-center md:text-right md:pr-12 mb-8 md:mb-0">
-                    <h3 class="text-2xl font-bold mb-2">Shoot & Edit</h3>
-                    <p class="text-gray-400">High-quality production and native-style editing optimized for retention.
-                    </p>
-                </div>
-                <div
-                    class="z-10 w-12 h-12 rounded-full bg-vermillion border-4 border-black flex items-center justify-center font-bold text-white shadow-[0_0_20px_rgba(227,66,52,0.5)]">
-                    3</div>
-                <div class="w-full md:w-5/12 md:pl-12 opacity-50 group-hover:opacity-100 transition-opacity">
-                    <div class="h-40 bg-white/5 rounded-2xl flex items-center justify-center">
-                        <span class="text-4xl">🎬</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Step 4 -->
-            <div
-                class="group relative flex flex-col md:flex-row-reverse items-center justify-between animate-on-scroll delay-300">
-                <div class="w-full md:w-5/12 text-center md:text-left md:pl-12 mb-8 md:mb-0">
-                    <h3 class="text-2xl font-bold mb-2">Delivery & Optimization</h3>
-                    <p class="text-gray-400">Final assets delivered ready for launch, with support for iteration.</p>
-                </div>
-                <div
-                    class="z-10 w-12 h-12 rounded-full bg-vermillion border-4 border-black flex items-center justify-center font-bold text-white shadow-[0_0_20px_rgba(227,66,52,0.5)]">
-                    4</div>
-                <div class="w-full md:w-5/12 md:pr-12 opacity-50 group-hover:opacity-100 transition-opacity">
-                    <div class="h-40 bg-white/5 rounded-2xl flex items-center justify-center">
-                        <span class="text-4xl">🚀</span>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
-    </main>
 
-    <!-- Footer -->
-    <footer class="bg-[#050505] border-t border-white/10 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left text-sm text-gray-600">
-            &copy; 2026 Vermillion. All rights reserved.
+        <!-- Step 2 -->
+        <div style="display: flex; gap: 2rem; margin-bottom: 4rem; position: relative;">
+          <div style="flex-shrink: 0; width: 56px; height: 56px; border-radius: var(--radius-md); background-color: var(--gray-900); color: #FFF; font-size: 1.25rem; font-weight: 700; display: flex; align-items: center; justify-content: center;">
+            02
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.5rem;">Concepting &amp; Copy</span>
+            <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">The 3-Second Hook Scripting Matrix</h2>
+            <p style="color: var(--gray-700); line-height: 1.65; margin-bottom: 1rem;">
+              Our direct-response copywriters craft modular scripts. Each concept includes 3 visual and verbal hook openers (pattern interrupts, problem calls, curiosity triggers), 2 value-prop body angles, and 2 distinct CTA closes.
+            </p>
+            <div style="background-color: var(--bg-light); border-radius: var(--radius-sm); padding: 1rem; font-size: 0.875rem; color: var(--gray-900); border-left: 3px solid var(--gray-900);">
+              <strong>Deliverable:</strong> Complete multi-hook script deck with visual director notes for client sign-off.
+            </div>
+          </div>
         </div>
-    </footer>
-    <script src="js/main.js"></script>
+
+        <!-- Step 3 -->
+        <div style="display: flex; gap: 2rem; margin-bottom: 4rem; position: relative;">
+          <div style="flex-shrink: 0; width: 56px; height: 56px; border-radius: var(--radius-md); background-color: var(--gray-900); color: #FFF; font-size: 1.25rem; font-weight: 700; display: flex; align-items: center; justify-content: center;">
+            03
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.5rem;">Shoot &amp; Capture</span>
+            <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">Creator Casting, AI Generation &amp; Studio Filming</h2>
+            <p style="color: var(--gray-700); line-height: 1.65; margin-bottom: 1rem;">
+              Depending on the sprint format, we dispatch product to vetted native creators, generate photorealistic AI avatar streams, or film in our commercial studio with cinema camera gear. All assets are filmed in native 9:16 vertical 4K.
+            </p>
+            <div style="background-color: var(--bg-light); border-radius: var(--radius-sm); padding: 1rem; font-size: 0.875rem; color: var(--gray-900); border-left: 3px solid var(--gray-900);">
+              <strong>Deliverable:</strong> Raw B-roll footage, multiple creator takes, and high-fidelity audio assets.
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div style="display: flex; gap: 2rem; margin-bottom: 4rem; position: relative;">
+          <div style="flex-shrink: 0; width: 56px; height: 56px; border-radius: var(--radius-md); background-color: var(--gray-900); color: #FFF; font-size: 1.25rem; font-weight: 700; display: flex; align-items: center; justify-content: center;">
+            04
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.5rem;">Editing &amp; Formatting</span>
+            <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">High-Retention Motion Post-Production</h2>
+            <p style="color: var(--gray-700); line-height: 1.65; margin-bottom: 1rem;">
+              Our editors apply kinetic text typography, sound effects, trending audio cues, and platform safe-zone positioning. We export all 12 ad variations per concept in Meta and TikTok compliant formats.
+            </p>
+            <div style="background-color: var(--bg-light); border-radius: var(--radius-sm); padding: 1rem; font-size: 0.875rem; color: var(--gray-900); border-left: 3px solid var(--gray-900);">
+              <strong>Deliverable:</strong> Google Drive / Frame.io batch ready for immediate media buyer campaign upload.
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div style="display: flex; gap: 2rem; margin-bottom: 2rem; position: relative;">
+          <div style="flex-shrink: 0; width: 56px; height: 56px; border-radius: var(--radius-md); background-color: var(--red-primary); color: #FFF; font-size: 1.25rem; font-weight: 700; display: flex; align-items: center; justify-content: center;">
+            05
+          </div>
+          <div>
+            <span class="eyebrow" style="margin-bottom: 0.5rem;">Analysis &amp; Scale</span>
+            <h2 style="font-size: 1.6rem; margin-bottom: 1rem;">Testing Data Review &amp; 48-Hour Iteration Sprints</h2>
+            <p style="color: var(--gray-700); line-height: 1.65; margin-bottom: 1rem;">
+              After 7 days of live media spend, we analyze the 3-second hook rates, 15-second hold rates, and ROAS. We isolate the winning angles and produce new hook iterations and cutdowns in under 48 hours to prevent creative fatigue.
+            </p>
+            <div style="background-color: var(--bg-light); border-radius: var(--radius-sm); padding: 1rem; font-size: 0.875rem; color: var(--gray-900); border-left: 3px solid var(--red-primary);">
+              <strong>Deliverable:</strong> Weekly Creative Performance Report + Instant Iteration Cutdowns.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         BOTTOM CTA
+         ========================================================================= -->
+    <section class="section section-dark dark-section">
+      <div class="container container-narrow" style="text-align: center;">
+        <h2>Ready To Plug Our Creative Engine Into Your Ad Account?</h2>
+        <p class="subtitle" style="color: var(--text-inverse-muted); margin-bottom: 2rem;">
+          Book a 20-minute strategy call to discuss your current creative roadmap and test velocity.
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          Book a Strategy Session
+          <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="header-logo" style="padding: 0; margin-bottom: 1rem;">
+            <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="44" height="44">
+            <div class="logo-text-group">
+              <span class="logo-brand-title" style="color: #FFFFFF;">VERMILLION <span class="logo-brand-accent" style="color: #E85D4E;">FRAMES</span></span>
+              <span class="logo-brand-tagline" style="color: #FFA499;">"Straight From Our Vision to Your Screen"</span>
+            </div>
+          </a>
+          <p>Performance-driven video ad studio for growth marketers, media buyers, and D2C founders.</p>
+          <p style="font-size: 0.75rem; color: var(--text-inverse-subtle); margin-top: 1rem;">
+            "Straight From Our Vision to Your Screen"
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Capabilities</h4>
+          <nav class="footer-nav">
+            <a href="services-ugc.html">UGC Video Ads</a>
+            <a href="services.html">AI-Avatar Video Ads</a>
+            <a href="services.html">Meta &amp; TikTok Paid Social</a>
+            <a href="services.html">Studio Real-Human Ads</a>
+            <a href="services.html">Direct-Response Scripts</a>
+            <a href="process.html">Creative Testing Matrix</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <nav class="footer-nav">
+            <a href="work.html">Case Studies &amp; Work</a>
+            <a href="process.html">5-Step Methodology</a>
+            <a href="about.html">About &amp; Brand Pillars</a>
+            <a href="pricing.html">Pricing &amp; Sprints</a>
+            <a href="contact.html">Contact &amp; Brief</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Get in Touch</h4>
+          <p style="font-size: 0.875rem; color: var(--text-inverse-muted); margin-bottom: 1rem;">Ready to scale performance creative?</p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="width: 100%;">Submit a Creative Brief</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vermillion Frames. All rights reserved. &bull; Developer: Rituraj Shukla</div>
+        <div class="footer-tagline">"Straight From Our Vision to Your Screen"</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>

@@ -1,147 +1,235 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | VERMILLION</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        vermillion: '#E34234',
-                        dark: '#0a0a0a',
-                        card: '#111111'
-                    },
-                    fontFamily: {
-                        sans: ['Inter', 'sans-serif'],
-                    }
-                }
-            }
-        }
-    </script>
+  <!-- Developer: Rituraj Shukla -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Vermillion Frames | Performance Video Ad Studio</title>
+  <meta name="description" content="Learn about Vermillion Frames: our mission, our 4 brand pillars (Performance, Speed, Authenticity, Craft), and how we produce video ads that scale ad accounts.">
+  
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
 
-<body class="bg-black text-white antialiased">
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 glass-nav border-b border-white/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <div class="flex-shrink-0">
-                    <a href="index.html" class="text-2xl font-bold tracking-tighter text-white">VERMILLION</a>
-                </div>
-                <!-- Desktop Menu -->
-                <div class="hidden md:block">
-                    <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="index.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Home</a>
-                        <a href="services.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Services</a>
-                        <a href="portfolio.html"
-                            class="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300">Work</a>
-                        <a href="contact.html"
-                            class="bg-white text-black hover:bg-gray-200 px-5 py-2 rounded-full text-sm font-medium transition-all duration-300">Book
-                            a Call</a>
-                    </div>
-                </div>
-                <!-- Mobile Menu Button -->
-                <div class="-mr-2 flex md:hidden">
-                    <button id="mobile-menu-button" type="button"
-                        class="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none">
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+  <!-- =========================================================================
+       GLOBAL STICKY HEADER
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="header-logo" aria-label="Vermillion Frames Home">
+        <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="44" height="44">
+        <div class="logo-text-group">
+          <span class="logo-brand-title">VERMILLION <span class="logo-brand-accent">FRAMES</span></span>
+          <span class="logo-brand-tagline">"Straight From Our Vision to Your Screen"</span>
         </div>
-        <!-- Mobile Menu -->
-        <div class="hidden md:hidden bg-black/95 backdrop-blur-xl absolute w-full" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-b border-white/10">
-                <a href="index.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Home</a>
-                <a href="services.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Services</a>
-                <a href="portfolio.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Work</a>
-                <a href="contact.html"
-                    class="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
-            </div>
+      </a>
+
+      <nav class="nav-links" aria-label="Primary Navigation">
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="work.html" class="nav-link">Work</a>
+        <a href="process.html" class="nav-link">Process</a>
+        <a href="about.html" class="nav-link active">About</a>
+        <a href="pricing.html" class="nav-link">Pricing</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="contact.html" class="btn btn-primary btn-sm">Book a Call</a>
+        <button class="mobile-menu-btn" aria-label="Open mobile menu">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-menu"></use></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="drawer-overlay"></div>
+  <aside class="mobile-drawer" aria-label="Mobile Navigation">
+    <div>
+      <div class="drawer-header">
+        <a href="index.html" class="header-logo" style="padding: 0;">
+          <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="38" height="38">
+          <div class="logo-text-group">
+            <span class="logo-brand-title" style="font-size: 1rem;">VERMILLION <span class="logo-brand-accent">FRAMES</span></span>
+            <span class="logo-brand-tagline" style="font-size: 0.52rem;">"Straight From Our Vision to Your Screen"</span>
+          </div>
+        </a>
+        <button class="drawer-close-btn modal-close-btn" aria-label="Close menu">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-close"></use></svg>
+        </button>
+      </div>
+      <nav class="drawer-nav">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="work.html">Work &amp; Case Studies</a>
+        <a href="process.html">Process</a>
+        <a href="about.html" class="active">About Studio</a>
+        <a href="pricing.html">Pricing &amp; Sprints</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+    <div>
+      <a href="contact.html" class="btn btn-primary" style="width: 100%;">Book a Strategy Call</a>
+    </div>
+  </aside>
+
+  <main id="main-content">
+    <!-- =========================================================================
+         ABOUT HERO
+         ========================================================================= -->
+    <section class="section section-subtle" style="padding-top: 3.5rem; padding-bottom: 3.5rem; border-bottom: 1px solid var(--border-light);">
+      <div class="container container-narrow" style="text-align: center;">
+        <div class="eyebrow">Our Mission &amp; Foundation</div>
+        <h1 style="margin-bottom: 1rem;">Video Ads Built For Revenue, Not Fluffy Awards</h1>
+        <p class="subtitle">
+          "Straight From Our Vision to Your Screen" &bull; We bridge the gap between creative storytelling and direct-response performance media buying.
+        </p>
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         THE STORY
+         ========================================================================= -->
+    <section class="section">
+      <div class="container container-narrow">
+        <div style="margin-bottom: 4rem;">
+          <span class="eyebrow">Why We Exist</span>
+          <h2 style="margin-bottom: 1.5rem;">Eliminating the 3-Week Agency Bottleneck</h2>
+          <p style="font-size: 1.05rem; color: var(--gray-900); line-height: 1.7; margin-bottom: 1.25rem;">
+            For years, growth marketers and D2C founders faced a broken choice: hire traditional creative agencies that charged exorbitant retainers and took 4 weeks to deliver 1 video ad, or hire freelance creators whose content lacked conversion strategy and hook mechanics.
+          </p>
+          <p style="font-size: 1.05rem; color: var(--gray-900); line-height: 1.7; margin-bottom: 1.25rem;">
+            <strong>Vermillion Frames</strong> was built as the performance alternative. We operate with the speed of an agile software sprint team. We understand that in paid social advertising, creative testing velocity is the single greatest determinant of your ROAS and customer acquisition cost.
+          </p>
+          <p style="font-size: 1.05rem; color: var(--gray-900); line-height: 1.7;">
+            Today, having delivered over <strong>10,000+ video creatives</strong> for industry leaders including Levi's, Unacademy, SEEKHO, ZingBus, and Astrotalk, we continue to engineer video ads with one unshakeable standard: <span class="text-red" style="font-weight: 600;">it must stop the scroll and it must generate revenue.</span>
+          </p>
         </div>
-    </nav>
 
-    <!-- Header -->
-    <header class="pt-40 pb-20 px-4 sm:px-6 lg:px-8 text-center max-w-7xl mx-auto">
-        <h1 class="text-4xl md:text-6xl font-bold mb-6 animate-on-scroll">Our Story</h1>
-    </header>
+        <!-- =====================================================================
+             THE 4 BRAND PILLARS
+             ===================================================================== -->
+        <div>
+          <span class="eyebrow">Core Philosophy</span>
+          <h2 style="margin-bottom: 2rem;">The 4 Pillars of Vermillion Frames</h2>
 
-    <!-- Content -->
-    <main class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 pb-32">
-        <div class="space-y-12 animate-on-scroll delay-100">
-            <div>
-                <p class="text-xl md:text-2xl font-light leading-relaxed text-gray-300">
-                    We are a performance-driven creative studio helping brands grow with compelling video ads. Our focus
-                    is on <span class="text-white font-medium">authenticity</span>, <span
-                        class="text-white font-medium">creativity</span>, and <span
-                        class="text-white font-medium">measurable results</span>.
-                </p>
+          <div class="grid grid-2" style="gap: 2rem;">
+            <!-- Pillar 1: Performance -->
+            <div class="service-card" style="padding: 2rem;">
+              <div class="service-card-icon"><svg class="icon"><use href="assets/icons/icons.svg#icon-trending-up"></use></svg></div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">1. Performance First</h3>
+              <p style="color: var(--gray-700); font-size: 0.95rem;">
+                Aesthetic appeal without conversion is a vanity project. Every concept is engineered around 3-second hook rate thresholds, 15-second hold curves, and outbound CTR.
+              </p>
             </div>
 
-            <div class="grid md:grid-cols-2 gap-12 pt-12">
-                <div>
-                    <h2 class="text-2xl font-bold mb-4 text-vermillion">Mission</h2>
-                    <p class="text-gray-400 leading-relaxed">To democratize high-performing video creatives for modern
-                        brands, bridging the gap between raw authentic content and polished performance marketing.</p>
-                </div>
-                <div>
-                    <h2 class="text-2xl font-bold mb-4 text-blue-400">Vision</h2>
-                    <p class="text-gray-400 leading-relaxed">To be the global standard for data-driven storytelling,
-                        where every frame serves a purpose and every video drives growth.</p>
-                </div>
+            <!-- Pillar 2: Speed -->
+            <div class="service-card" style="padding: 2rem;">
+              <div class="service-card-icon"><svg class="icon"><use href="assets/icons/icons.svg#icon-clock"></use></svg></div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">2. Speed as a Feature</h3>
+              <p style="color: var(--gray-700); font-size: 0.95rem;">
+                Ad fatigue kills campaign momentum. When an ad shows fatigue, our 48-hour sprint turnaround delivers fresh hook angles to keep your campaigns scaling without pause.
+              </p>
             </div>
 
-            <!-- Team Placeholder -->
-            <div class="pt-20">
-                <h2 class="text-2xl font-bold mb-8 text-center">The Team</h2>
-                <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-                    <!-- Member 1 -->
-                    <div class="bg-white/5 rounded-2xl p-4 text-center">
-                        <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-3"></div>
-                        <div class="font-medium">Creative Lead</div>
-                    </div>
-                    <!-- Member 2 -->
-                    <div class="bg-white/5 rounded-2xl p-4 text-center">
-                        <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-3"></div>
-                        <div class="font-medium">Strategist</div>
-                    </div>
-                    <!-- Member 3 -->
-                    <div class="bg-white/5 rounded-2xl p-4 text-center">
-                        <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-3"></div>
-                        <div class="font-medium">Editor</div>
-                    </div>
-                    <!-- Member 4 -->
-                    <div class="bg-white/5 rounded-2xl p-4 text-center">
-                        <div class="w-16 h-16 bg-gray-700 rounded-full mx-auto mb-3"></div>
-                        <div class="font-medium">Producer</div>
-                    </div>
-                </div>
+            <!-- Pillar 3: Authenticity -->
+            <div class="service-card" style="padding: 2rem;">
+              <div class="service-card-icon"><svg class="icon"><use href="assets/icons/icons.svg#icon-users"></use></svg></div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">3. Native Authenticity</h3>
+              <p style="color: var(--gray-700); font-size: 0.95rem;">
+                Ads must fit natively into the user's social feed. We capture organic creator reactions, real customer friction points, and conversational dialogue that viewers trust.
+              </p>
             </div>
+
+            <!-- Pillar 4: Craft -->
+            <div class="service-card" style="padding: 2rem;">
+              <div class="service-card-icon"><svg class="icon"><use href="assets/icons/icons.svg#icon-film"></use></svg></div>
+              <h3 style="font-size: 1.35rem; margin-bottom: 0.75rem;">4. Technical Craft</h3>
+              <p style="color: var(--gray-700); font-size: 0.95rem;">
+                Behind our rapid turnaround is meticulous post-production: broadcast-level audio mastering, frame-accurate kinetic captioning, and safe-zone alignment.
+              </p>
+            </div>
+          </div>
         </div>
-    </main>
+      </div>
+    </section>
 
-    <!-- Footer -->
-    <footer class="bg-[#050505] border-t border-white/10 py-12">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center md:text-left text-sm text-gray-600">
-            &copy; 2026 Vermillion. All rights reserved.
+    <!-- =========================================================================
+         BOTTOM CTA
+         ========================================================================= -->
+    <section class="section section-dark dark-section">
+      <div class="container container-narrow" style="text-align: center;">
+        <h2>Ready To Partner With A Studio That Speaks Your Language?</h2>
+        <p class="subtitle" style="color: var(--text-inverse-muted); margin-bottom: 2rem;">
+          Let's discuss how our sprint framework can scale your current paid media channels.
+        </p>
+        <a href="contact.html" class="btn btn-primary btn-lg">
+          Book a Strategy Call
+          <svg class="icon-sm"><use href="assets/icons/icons.svg#icon-arrow-right"></use></svg>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="header-logo" style="padding: 0; margin-bottom: 1rem;">
+            <img src="assets/images/logo-mark.png" alt="Vermillion Frames" class="logo-symbol" width="44" height="44">
+            <div class="logo-text-group">
+              <span class="logo-brand-title" style="color: #FFFFFF;">VERMILLION <span class="logo-brand-accent" style="color: #E85D4E;">FRAMES</span></span>
+              <span class="logo-brand-tagline" style="color: #FFA499;">"Straight From Our Vision to Your Screen"</span>
+            </div>
+          </a>
+          <p>Performance-driven video ad studio for growth marketers, media buyers, and D2C founders.</p>
+          <p style="font-size: 0.75rem; color: var(--text-inverse-subtle); margin-top: 1rem;">
+            "Straight From Our Vision to Your Screen"
+          </p>
         </div>
-    </footer>
-    <script src="js/main.js"></script>
+
+        <div>
+          <h4 class="footer-heading">Capabilities</h4>
+          <nav class="footer-nav">
+            <a href="services-ugc.html">UGC Video Ads</a>
+            <a href="services.html">AI-Avatar Video Ads</a>
+            <a href="services.html">Meta &amp; TikTok Paid Social</a>
+            <a href="services.html">Studio Real-Human Ads</a>
+            <a href="services.html">Direct-Response Scripts</a>
+            <a href="process.html">Creative Testing Matrix</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <nav class="footer-nav">
+            <a href="work.html">Case Studies &amp; Work</a>
+            <a href="process.html">5-Step Methodology</a>
+            <a href="about.html">About &amp; Brand Pillars</a>
+            <a href="pricing.html">Pricing &amp; Sprints</a>
+            <a href="contact.html">Contact &amp; Brief</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Get in Touch</h4>
+          <p style="font-size: 0.875rem; color: var(--text-inverse-muted); margin-bottom: 1rem;">Ready to scale performance creative?</p>
+          <a href="contact.html" class="btn btn-primary btn-sm" style="width: 100%;">Submit a Creative Brief</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Vermillion Frames. All rights reserved. &bull; Developer: Rituraj Shukla</div>
+        <div class="footer-tagline">"Straight From Our Vision to Your Screen"</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
-
 </html>
